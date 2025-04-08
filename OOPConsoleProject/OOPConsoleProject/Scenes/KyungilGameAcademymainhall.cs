@@ -49,6 +49,10 @@ namespace OOPConsoleProject.Scenes
             gameObjects.Add(new Place("Jeongtaeksroom", 'O', new Vector2(49, 6)));
             gameObjects.Add(new Place("Jaeseongsroom", 'O', new Vector2(55, 6)));
             gameObjects.Add(new Place("JunheonsRoom", 'O', new Vector2(61, 6)));
+            gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(29, 8)));
+            gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(30, 8)));
+            gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(36, 8)));
+            gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(37, 8)));
             //<-새로운게 추가된다면 이 줄에 적어야함
 
         }
@@ -59,11 +63,24 @@ namespace OOPConsoleProject.Scenes
             {
                 Game.Player.position = new Vector2(33, 10);
             }
-            else if (Game.prevSceneName == "Jeongtaeksroom")
+            else if (Game.prevSceneName == "Jeongtaeksroom") // 정택의 방
             {
                 Game.Player.position = new Vector2(49, 7);
             }
-            Game.Player.map = map;
+            else if (Game.prevSceneName == "Jaeseongsroom") //재성의 방
+            {
+                Game.Player.position = new Vector2(56, 7);
+            }
+            else if (Game.prevSceneName == "JunheonsRoom") //준헌의 방
+            {
+                Game.Player.position = new Vector2(61, 7);
+            }
+            else
+            {   
+                Game.Player.position = new Vector2(33, 10); //아무데에서도 진입하지 못했을때 디버깅용
+            }
+                Game.Player.map = map;
+            
         }
 
     }

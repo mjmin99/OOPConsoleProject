@@ -71,7 +71,7 @@ namespace OOPConsoleProject
             sceneDic.Add("AdministrativeOffice", new AdministrativeOffice()); //행정실               ┃
             sceneDic.Add("PlanningLectureRoom", new PlanningLectureRoom()); //기획강의실  ━━━━━━━━━━━┛
 
-            curScene = sceneDic["Title"]; //첫 시작 타이틀
+            curScene = sceneDic["Op2_2"]; //첫 시작 타이틀
 
 
         }

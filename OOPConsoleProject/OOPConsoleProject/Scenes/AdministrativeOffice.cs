@@ -21,11 +21,11 @@ namespace OOPConsoleProject.Scenes
                 "▒        ▒        ▒        ▒       ▒        ▒        ▒        ▒",
                 "▒▒▒▒  ▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒  ▒▒▒▒       ▒▒▒▒  ▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒  ▒▒▒▒",
                 "▒                                                             ▒",
-                "▒                                                             ▒",
+                "▒                         ▒▒▒▒▒▒▒▒▒▒▒                         ▒",
                 "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒",
                };
 
-            map = new bool[7, 63];
+            map = new bool[8, 63];
             for (int y = 0; y < map.GetLength(0); y++)
             {
                 for (int x = 0; x < map.GetLength(1); x++)
@@ -35,7 +35,10 @@ namespace OOPConsoleProject.Scenes
             }
 
             gameObjects = new List<GameObject>();
-            gameObjects.Add(new Place("Title", 'P', new Vector2(1, 1))); //임시로 타이틀을 넣었으나 나중에 포탈로 다른 맵과 이어야함
+            gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(24, 6)));
+            gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(25, 6)));
+            gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(36, 6)));
+            gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(37, 6)));
             //<-새로운게 추가된다면 이 줄에 적어야함
         }
         public override void Enter()

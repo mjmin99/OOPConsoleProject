@@ -12,9 +12,9 @@ namespace OOPConsoleProject.Scenes
             {
                 "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒",
                 "▒                               ▒",
-                "▒         ▒▒▒▒▒▒▒▒▒▒▒▒          ▒",
+                "▒         ▒▒▒▒▒▒▒▒▒▒▒▒▒         ▒",
                 "▒                               ▒",
-                "▒     ▒     ▒      ▒      ▒     ▒",
+                "▒                               ▒",
                 "▒                               ▒",
                 "▒                               ▒",
                 "▒                               ▒",
@@ -32,7 +32,10 @@ namespace OOPConsoleProject.Scenes
             }
 
             gameObjects = new List<GameObject>();
-            gameObjects.Add(new Place("Title", 'P', new Vector2(1, 1))); //임시로 타이틀을 넣었으나 나중에 포탈로 다른 맵과 이어야함
+            gameObjects.Add(new Place("KyungilGameAcademymainhall", 'O', new Vector2(6, 4)));
+            gameObjects.Add(new Place("AllPublicAreas", 'O', new Vector2(12, 4)));
+            gameObjects.Add(new Place("AdministrativeOffice", 'O', new Vector2(20, 4)));
+            gameObjects.Add(new Place("PlanningLectureRoom", 'O', new Vector2(26, 4)));
             //<-새로운게 추가된다면 이 줄에 적어야함
         }
         public override void Enter()

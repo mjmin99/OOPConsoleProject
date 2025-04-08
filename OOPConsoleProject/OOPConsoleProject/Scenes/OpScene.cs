@@ -15,7 +15,7 @@ namespace OOPConsoleProject.Scenes
         {
             if (onetime == false)
             {
-                Util.Print("갑자기 머리가 깨질듯이 아프다....머리 속에서 누가 말을 걸어온다.", ConsoleColor.White, 3000);
+                Util.Print("갑자기 머리가 깨질듯이 아프다....머리 속에서 누가 말을 걸어온다.", ConsoleColor.White, 1500);
             }
 
             Util.Print("", ConsoleColor.White, 1000);
@@ -28,8 +28,8 @@ namespace OOPConsoleProject.Scenes
                 Console.WriteLine("      \\                /             ");
                 Console.WriteLine("　　\\　　  장난치지　 　　/          ");
                 Console.WriteLine("-　-　     마십시오! 　　-　-　-      ");
-                Console.WriteLine("　　/ 다 들리지 않습니까!\\           ");
-                Console.WriteLine("  /    /진짜 안들리나? .              ");
+                Console.WriteLine("　　/      다 들리지     \\           ");
+                Console.WriteLine("  /    /   않습니까!   .              ");
                 Console.WriteLine("    /                \\               ");
                 Console.WriteLine("          /  |                        ");
                 Console.WriteLine("              .                       ");

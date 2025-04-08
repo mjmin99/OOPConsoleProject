@@ -69,7 +69,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine();
             Thread.Sleep(3000);
             Console.WriteLine("1. 잠깐 기다려... 왜 여기를 나가야한다는 거야?");
-            Console.WriteLine("2. 응 그래 알겠어. 그래서 나는 뭘 해야하지?");
+            Console.WriteLine("2. 응 그래 알겠어. 뭐 부터 하면 될까?");
         }
 
         public override void Input()

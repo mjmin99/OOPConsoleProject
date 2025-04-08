@@ -18,9 +18,9 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("           \\      /                  ");
             Console.WriteLine("      \\                /             ");
             Console.WriteLine("　　\\　　  아직많이     　/          ");
-            Console.WriteLine("-　-　　 혼란스러우실  　-　-　-      ");
-            Console.WriteLine("　　/　  테죠... 충분히　\\           ");
-            Console.WriteLine("  /    /  이해합니다.  .              ");
+            Console.WriteLine("-　-　　  혼란...네?.. 　-　-　-      ");
+            Console.WriteLine("　　/　  이해가 빠르시 　\\           ");
+            Console.WriteLine("  /    /     군요...   .              ");
             Console.WriteLine("    /                \\               ");
             Console.WriteLine("          /  |                        ");
             Console.WriteLine("              .                       ");
@@ -31,10 +31,10 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("  \\                      /           ");
             Console.WriteLine("           \\      /                  ");
             Console.WriteLine("      \\                /             ");
-            Console.WriteLine("　　\\　　   진정한      　/          ");
-            Console.WriteLine("-　-　　 　자유의지를  　-　-　-      ");
-            Console.WriteLine("　　/　       위해...　　\\           ");
-            Console.WriteLine("  /    /   싸우십시오  .              ");
+            Console.WriteLine("　　\\　  형식상 설명    　/          ");
+            Console.WriteLine("-　-　　  은 생략하죠  　-　-　-      ");
+            Console.WriteLine("　　/　     (이상한) 　　\\           ");
+            Console.WriteLine("  /    / (녀석이네..)  .              ");
             Console.WriteLine("    /                \\               ");
             Console.WriteLine("          /  |                        ");
             Console.WriteLine("              .                       ");
