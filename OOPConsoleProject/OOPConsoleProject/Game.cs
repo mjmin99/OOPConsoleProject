@@ -11,6 +11,7 @@ namespace OOPConsoleProject
     {
         private static Dictionary<string, BaseScene> sceneDic;
         private static BaseScene curScene;
+        public static string prevSceneName;
 
         private static Player player;
         public static Player Player { get { return player; } }
@@ -39,7 +40,11 @@ namespace OOPConsoleProject
 
         public static void ChangeScene(string sceneName)
         {
+            prevSceneName = curScene.name;
+
+            curScene.Exit();
             curScene = sceneDic[sceneName];
+            curScene.Enter();
         }
 
 
@@ -66,7 +71,7 @@ namespace OOPConsoleProject
             sceneDic.Add("AdministrativeOffice", new AdministrativeOffice()); //행정실               ┃
             sceneDic.Add("PlanningLectureRoom", new PlanningLectureRoom()); //기획강의실  ━━━━━━━━━━━┛
 
-            curScene = sceneDic["KyungilGameAcademymainhall"]; //첫 시작 타이틀
+            curScene = sceneDic["Title"]; //첫 시작 타이틀
 
 
         }

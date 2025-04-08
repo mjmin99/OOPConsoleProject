@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace OOPConsoleProject.Scenes
 {
-    class PlanningLectureRoom : BaseScene
+    public class PlanningLectureRoom : BaseScene
     {
+        public PlanningLectureRoom() 
+        {
+            name = "PlanningLectureRoom";
+        }
         public override void Render()
         {
            

@@ -2,18 +2,12 @@
 
 namespace OOPConsoleProject.Scenes
 {
-    class KyungilGameAcademylobby : FieldScene
+    public class KyungilGameAcademylobby : FieldScene
     {
-        private ConsoleKey input;
-
-        private string[] mapData;
-
-        private bool[,] map;
-
-        private List<GameObject> gameObjects;
 
         public KyungilGameAcademylobby()
         {
+            name = "KyungilGameAcademylobby";
             mapData = new string[]
             {
                 "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒",
@@ -40,9 +34,11 @@ namespace OOPConsoleProject.Scenes
             gameObjects = new List<GameObject>();
             gameObjects.Add(new Place("Title", 'P', new Vector2(1, 1))); //임시로 타이틀을 넣었으나 나중에 포탈로 다른 맵과 이어야함
             //<-새로운게 추가된다면 이 줄에 적어야함
-            Game.Player.position = new Vector2(33, 10);
+        }
+        public override void Enter()
+        {
+            Game.Player.position = new Vector2(16, 5);
             Game.Player.map = map;
-
         }
     }
 }

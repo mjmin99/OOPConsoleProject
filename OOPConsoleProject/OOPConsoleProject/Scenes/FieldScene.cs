@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPConsoleProject.Scenes
 {
-    class FieldScene : BaseScene
+    public abstract class FieldScene : BaseScene
     {
         private ConsoleKey input;
 

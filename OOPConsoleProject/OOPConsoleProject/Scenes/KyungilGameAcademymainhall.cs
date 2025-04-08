@@ -7,18 +7,12 @@ using OOPConsoleProject.GameObjects;
 
 namespace OOPConsoleProject.Scenes
 {
-    class KyungilGameAcademymainhall : FieldScene
+    public class KyungilGameAcademymainhall : FieldScene
     {
-        private ConsoleKey input;
-
-        private string[] mapData;
-        
-        private bool[,] map;
-
-        private List<GameObject> gameObjects;
 
         public KyungilGameAcademymainhall()
         {
+            name = "KyungilGameAcademymainhall";
             mapData = new string[]
             {
                 "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒",
@@ -54,9 +48,23 @@ namespace OOPConsoleProject.Scenes
             gameObjects = new List<GameObject>();
             gameObjects.Add(new Place("Jeongtaeksroom", 'O', new Vector2(49, 6)));
             gameObjects.Add(new Place("Jaeseongsroom", 'O', new Vector2(55, 6)));
+            gameObjects.Add(new Place("JunheonsRoom", 'O', new Vector2(61, 6)));
             //<-새로운게 추가된다면 이 줄에 적어야함
-            Game.Player.position = new Vector2(33,10);
+
+        }
+
+        public override void Enter()
+        {
+            if ((Game.prevSceneName == "Op2_1") || (Game.prevSceneName == "Op2_2"))
+            {
+                Game.Player.position = new Vector2(33, 10);
+            }
+            else if (Game.prevSceneName == "Jeongtaeksroom")
+            {
+                Game.Player.position = new Vector2(49, 7);
+            }
             Game.Player.map = map;
         }
+
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPConsoleProject.Scenes
 {
-    class OpScene2_2 : BaseScene
+    public class OpScene2_2 : BaseScene
     {
         private ConsoleKey input;
 
