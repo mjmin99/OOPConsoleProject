@@ -83,8 +83,8 @@ namespace OOPConsoleProject.Scenes
                     {
                         Console.Write('▒');
                     }
-                    Console.WriteLine(); //줄바꿈
                 }
+                Console.WriteLine(); //4차 버그 줄바꿈 위치가 잘못되어 있었음
             }
         }
 
