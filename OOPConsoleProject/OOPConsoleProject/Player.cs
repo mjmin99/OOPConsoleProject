@@ -22,15 +22,19 @@
             switch (input)
             {
                 case ConsoleKey.UpArrow:
+                case ConsoleKey.W:
                     targetPos.y--;
                     break;
                 case ConsoleKey.DownArrow:
+                case ConsoleKey.S:
                     targetPos.y++;
                     break;
                 case ConsoleKey.LeftArrow:
+                case ConsoleKey.A:
                     targetPos.x--;
                     break;
                 case ConsoleKey.RightArrow:
+                case ConsoleKey.D:
                     targetPos.x++;
                     break;
             }

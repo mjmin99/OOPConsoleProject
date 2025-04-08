@@ -24,6 +24,7 @@ namespace OOPConsoleProject
 
             while (gameOver == false) //게임오버 될 때까지 반복
             { 
+                Console.Clear();
                 Console.SetCursorPosition(0,0);// 1차 버그 수정 -> 반복 시작될 때 콘솔 화면 클리어.
                 Console.CursorVisible = false;
                 curScene.Render();
@@ -51,14 +52,21 @@ namespace OOPConsoleProject
 
             //씬 설정
             sceneDic = new Dictionary<string, BaseScene>();
-            sceneDic.Add("Title", new TitleScene()); //씬이 추가될때마다 아래에 추가할 것
-            sceneDic.Add("Op", new OpScene());
-            sceneDic.Add("Op2", new OpScene2());
-            sceneDic.Add("Op2_1", new OpScene2_1());
-            sceneDic.Add("Op2_2", new OpScene2_2());
-            sceneDic.Add("KyungilGameAcademymainhall", new KyungilGameAcademymainhall());
+            sceneDic.Add("Title", new TitleScene());   // 타이틀 시퀀스
+            sceneDic.Add("Op", new OpScene());         // ━┓
+            sceneDic.Add("Op2", new OpScene2());       //  ┃
+            sceneDic.Add("Op2_1", new OpScene2_1());   //  ┣━ 오프닝 시퀀스
+            sceneDic.Add("Op2_2", new OpScene2_2());   // ━┛
+            sceneDic.Add("KyungilGameAcademymainhall", new KyungilGameAcademymainhall()); //메인홀  ━┓
+            sceneDic.Add("KyungilGameAcademylobby", new KyungilGameAcademylobby()); //로비           ┃
+            sceneDic.Add("Jeongtaeksroom", new Jeongtaeksroom()); //정택의 방                        ┃
+            sceneDic.Add("Jaeseongsroom", new Jaeseongsroom()); //재성의 방                          ┃
+            sceneDic.Add("JunheonsRoom", new JunheonsRoom()); //준헌의 방                 필드맵 씬 ━┫  
+            sceneDic.Add("AllPublicAreas", new AllPublicAreas()); // 전체공지방                      ┃
+            sceneDic.Add("AdministrativeOffice", new AdministrativeOffice()); //행정실               ┃
+            sceneDic.Add("PlanningLectureRoom", new PlanningLectureRoom()); //기획강의실  ━━━━━━━━━━━┛
 
-            curScene = sceneDic["KyungilGameAcademymainhall"]; //첫 시작 타이틀
+            curScene = sceneDic["Op"]; //첫 시작 타이틀
 
 
         }

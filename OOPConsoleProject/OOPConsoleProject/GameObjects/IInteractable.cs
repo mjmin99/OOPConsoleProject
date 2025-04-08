@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPConsoleProject.Scenes
+namespace OOPConsoleProject.GameObjects
 {
     public interface IInteractable
     {
