@@ -24,7 +24,7 @@ namespace OOPConsoleProject
 
             while (gameOver == false) //게임오버 될 때까지 반복
             { 
-                Console.Clear();// 1차 버그 수정 -> 반복 시작될 때 콘솔 화면 클리어.
+                Console.SetCursorPosition(0,0);// 1차 버그 수정 -> 반복 시작될 때 콘솔 화면 클리어.
                 curScene.Render();
                 curScene.Input();
                 curScene.Update();
@@ -45,6 +45,9 @@ namespace OOPConsoleProject
         {
             gameOver = false;
 
+            //플레이어 설정
+            player = new Player();
+
             //씬 설정
             sceneDic = new Dictionary<string, BaseScene>();
             sceneDic.Add("Title", new TitleScene()); //씬이 추가될때마다 아래에 추가할 것
@@ -56,8 +59,7 @@ namespace OOPConsoleProject
 
             curScene = sceneDic["KyungilGameAcademymainhall"]; //첫 시작 타이틀
 
-            //플레이어 설정
-            player = new Player();
+
         }
 
         private static void End()
