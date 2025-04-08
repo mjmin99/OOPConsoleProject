@@ -31,6 +31,13 @@ namespace OOPConsoleProject
             End(); // 마무리 작업
         }
 
+
+        public static void ChangeScene(string sceneName)
+        {
+            curScene = sceneDic[sceneName];
+        }
+
+
         private static void Start() // 콘솔에서 필요한 작업들을 여기서 진행
         {
             gameOver = false;
@@ -38,6 +45,7 @@ namespace OOPConsoleProject
             //씬 설정
             sceneDic = new Dictionary<string, BaseScene>();
             sceneDic.Add("Title", new TitleScene()); //씬이 추가될때마다 아래에 추가할 것
+            sceneDic.Add("Op", new OpScene());
 
             curScene = sceneDic["Title"]; //첫 시작 타이틀
         }
