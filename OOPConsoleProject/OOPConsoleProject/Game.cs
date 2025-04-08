@@ -12,6 +12,9 @@ namespace OOPConsoleProject
         private static Dictionary<string, BaseScene> sceneDic;
         private static BaseScene curScene;
 
+        private static Player player;
+        public static Player Player { get { return player; } }
+
         private static bool gameOver;
 
 
@@ -52,6 +55,9 @@ namespace OOPConsoleProject
             sceneDic.Add("KyungilGameAcademymainhall", new KyungilGameAcademymainhall());
 
             curScene = sceneDic["KyungilGameAcademymainhall"]; //첫 시작 타이틀
+
+            //플레이어 설정
+            player = new Player();
         }
 
         private static void End()

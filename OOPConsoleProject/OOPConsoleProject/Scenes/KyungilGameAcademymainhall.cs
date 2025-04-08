@@ -32,9 +32,9 @@ namespace OOPConsoleProject.Scenes
                 "▒                                                                  ▒",
                 "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                              ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒",
                 "▒                                                                  ▒",
+                "▒          ▒▒▒▒                ▒▒▒▒                ▒▒▒▒            ▒",
                 "▒                                                                  ▒",
-                "▒                                                                  ▒",
-                "▒                                                                  ▒",
+                "▒          ▒▒▒▒                ▒▒▒▒                ▒▒▒▒            ▒",
                 "▒                                                                  ▒",
                 "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒",
             };
@@ -46,13 +46,17 @@ namespace OOPConsoleProject.Scenes
                 {
                     map[y, x] = mapData[y][x] == '▒' ? false : true;
                 }
-            }
+            } 
+            
+            Game.Player.position = new Vector2(1,1);
         }
 
+       
 
         public override void Render()
         {
             PrintMap();
+            Game.Player.Print();
         }
 
         public override void Input()
@@ -62,7 +66,7 @@ namespace OOPConsoleProject.Scenes
 
         public override void Update()
         {
-
+            Game.Player.Move(input);
         }
         public override void Result()
         {
