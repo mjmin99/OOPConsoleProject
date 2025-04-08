@@ -46,8 +46,11 @@ namespace OOPConsoleProject
             sceneDic = new Dictionary<string, BaseScene>();
             sceneDic.Add("Title", new TitleScene()); //씬이 추가될때마다 아래에 추가할 것
             sceneDic.Add("Op", new OpScene());
+            sceneDic.Add("Op2", new OpScene2());
+            sceneDic.Add("Op2_1", new OpScene2_1());
+            sceneDic.Add("Op2_2", new OpScene2_2());
 
-            curScene = sceneDic["Title"]; //첫 시작 타이틀
+            curScene = sceneDic["Op2"]; //첫 시작 타이틀
         }
 
         private static void End()

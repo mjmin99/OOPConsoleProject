@@ -9,12 +9,35 @@ namespace OOPConsoleProject.Scenes
     class OpScene : BaseScene
     {
         private ConsoleKey input;
+        private bool joke = false;
+        private bool onetime = false;
         public override void Render()
         {
-            Util.Print("갑자기 머리가 깨질듯이 아프다....",ConsoleColor.White, 300);
+            if (onetime == false)
+            {
+                Util.Print("갑자기 머리가 깨질듯이 아프다....머리 속에서 누가 말을 걸어온다.", ConsoleColor.White, 3000);
+            }
 
-            Util.Print("", ConsoleColor.White, 300);
+            Util.Print("", ConsoleColor.White, 1000);
+            if (joke==true)
+            {
 
+                Console.WriteLine(".              |                      ");
+                Console.WriteLine("  \\                      /           ");
+                Console.WriteLine("           \\      /                  ");
+                Console.WriteLine("      \\                /             ");
+                Console.WriteLine("　　\\　　  장난치지　 　　/          ");
+                Console.WriteLine("-　-　     마십시오! 　　-　-　-      ");
+                Console.WriteLine("　　/ 다 들리지 않습니까!\\           ");
+                Console.WriteLine("  /    /진짜 안들리나? .              ");
+                Console.WriteLine("    /                \\               ");
+                Console.WriteLine("          /  |                        ");
+                Console.WriteLine("              .                       ");
+                Console.WriteLine();
+                Thread.Sleep(3000);
+            }
+            
+            Console.Clear();
             Console.WriteLine(".              |                      ");
             Console.WriteLine("  \\                      /           ");
             Console.WriteLine("           \\      /                  ");
@@ -29,6 +52,8 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine();
             Console.WriteLine("1. 들린다.");
             Console.WriteLine("2. 안들린다.");
+
+
         }
 
         public override void Input()
@@ -50,6 +75,8 @@ namespace OOPConsoleProject.Scenes
                     break;
                 case ConsoleKey.D2:
                     Game.ChangeScene("Op");
+                    joke = true;
+                    onetime = true;
                     break;
             }
 

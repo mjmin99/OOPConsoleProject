@@ -13,7 +13,9 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine();
             Util.PrintNoLine("주위를 둘러봐도", ConsoleColor.White, 666);
             Util.PrintNoLine("\'빛\'", ConsoleColor.DarkYellow, 666);
-            Util.PrintNoLine("이라곤 찾아볼 수 없는 이곳은...", ConsoleColor.Gray, 666);
+            Util.Print("이라곤 찾아볼 수 없는 이곳은...", ConsoleColor.Gray, 666);
+            Console.WriteLine();
+            Util.Print("\'경일게임아카데미\'였다.", ConsoleColor.White, 333);
             Console.WriteLine();
             Console.WriteLine();
             Util.Print(" _____                                   __                         ", ConsoleColor.White, 333);
@@ -32,12 +34,13 @@ namespace OOPConsoleProject.Scenes
             Util.Print("| |\\  \\| |_| || |_| || | | || (_| || || |   | | | || (__ | (_| || (_| ||  __/| | | | | || |_| |", ConsoleColor.White, 333);
             Util.Print("\\_| \\_/ \\__, | \\__,_||_| |_| \\__, ||_||_|   \\_| |_/ \\___| \\__,_| \\__,_| \\___||_| |_| |_| \\__, |", ConsoleColor.White, 333);
             Util.Print("         __/ |                __/ |                                                       __/ |", ConsoleColor.White, 333);
-            Util.Print("        |___/                |___/                                                       |___/ ", ConsoleColor.White, 1320);
+            Util.Print("        |___/                |___/                                                       |___/ ", ConsoleColor.White, 555);
             Console.WriteLine();
             Console.WriteLine();
-            Util.Print("\'경일게임아카데미\'였다.", ConsoleColor.White, 333);
             Console.WriteLine();
             Console.WriteLine("탈출하려면 아무키나 누르세요...");
+            Console.WriteLine("※ 비슷해보이는 모든 것들은 전부 우연의 일치이며,");
+            Console.WriteLine("  게임을 위해 창작된 픽션일 뿐입니다. 실제와 아무 연관이 없음을 밝힙니다.");
         }
 
         public override void Input()
