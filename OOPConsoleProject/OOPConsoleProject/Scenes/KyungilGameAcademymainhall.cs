@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OOPConsoleProject.GameObjects;
 
 namespace OOPConsoleProject.Scenes
 {
@@ -13,6 +14,8 @@ namespace OOPConsoleProject.Scenes
         private string[] mapData;
         
         private bool[,] map;
+
+        private List<GameObject> gameObjects;
 
         public KyungilGameAcademymainhall()
         {
@@ -25,16 +28,16 @@ namespace OOPConsoleProject.Scenes
                 "▒                      ▒                   ▒  ▒     ▒     ▒     ▒  ▒",
                 "▒▒▒▒▒▒▒▒▒▒▒▒           ▒▒▒▒             ▒▒▒▒  ▒     ▒     ▒     ▒  ▒",
                 "▒                         ▒             ▒     ▒▒▒ ▒▒▒▒▒ ▒▒▒▒▒ ▒▒▒  ▒",
-                "▒                         ▒▒▒▒▒▒▒  ▒▒▒▒▒▒                          ▒",
+                "▒                         ▒▒▒▒▒▒   ▒▒▒▒▒▒                          ▒",
                 "▒                                                                  ▒",
                 "▒                                                                  ▒",
-                "▒                                                                  ▒",
+                "▒   ▒   ▒   ▒                                       ▒    ▒    ▒    ▒",
                 "▒                                                                  ▒",
                 "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                              ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒",
                 "▒                                                                  ▒",
-                "▒          ▒▒▒▒                ▒▒▒▒                ▒▒▒▒            ▒",
+                "▒           ▒▒▒▒                ▒▒▒▒                ▒▒▒▒           ▒",
                 "▒                                                                  ▒",
-                "▒          ▒▒▒▒                ▒▒▒▒                ▒▒▒▒            ▒",
+                "▒           ▒▒▒▒                ▒▒▒▒                ▒▒▒▒           ▒",
                 "▒                                                                  ▒",
                 "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒",
             };
@@ -47,7 +50,10 @@ namespace OOPConsoleProject.Scenes
                     map[y, x] = mapData[y][x] == '▒' ? false : true;
                 }
             } 
-            
+
+            gameObjects = new List<GameObject>();
+            gameObjects.Add(new Place("Title", 'P', new Vector2(1, 1))); //임시로 타이틀을 넣었으나 나중에 포탈로 다른 맵과 이어야함
+            //<-새로운게 추가된다면 이 줄에 적어야함
             Game.Player.position = new Vector2(33,10);
             Game.Player.map = map;
         }
@@ -57,6 +63,10 @@ namespace OOPConsoleProject.Scenes
         public override void Render()
         {
             PrintMap();
+            foreach (GameObject go in gameObjects)
+            {
+                go.Print();
+            }
             Game.Player.Print();
         }
 
@@ -71,7 +81,13 @@ namespace OOPConsoleProject.Scenes
         }
         public override void Result()
         {
-          
+            foreach (GameObject go in gameObjects)
+            {
+                if (Game.Player.position == go.position) // 두 값끼리 비교를 위해 연산자 재정의를 해본다.
+                {
+                    go.Interact(Game.Player);
+                }
+            }
         }
         private void PrintMap()
         { 

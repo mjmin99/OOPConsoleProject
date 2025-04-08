@@ -10,6 +10,7 @@ namespace OOPConsoleProject.Scenes
     {
         public override void Render()
         {
+            Console.Clear();
             Console.WriteLine();
             Util.PrintNoLine("주위를 둘러봐도", ConsoleColor.White, 666);
             Util.PrintNoLine("\'빛\'", ConsoleColor.DarkYellow, 666);
