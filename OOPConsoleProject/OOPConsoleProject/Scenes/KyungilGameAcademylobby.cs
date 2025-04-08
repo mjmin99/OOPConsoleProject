@@ -2,7 +2,7 @@
 
 namespace OOPConsoleProject.Scenes
 {
-    class KyungilGameAcademylobby : BaseScene
+    class KyungilGameAcademylobby : FieldScene
     {
         private ConsoleKey input;
 
@@ -28,7 +28,7 @@ namespace OOPConsoleProject.Scenes
 
             };
 
-            map = new bool[33, 9];
+            map = new bool[9, 33];
             for (int y = 0; y < map.GetLength(0); y++)
             {
                 for (int x = 0; x < map.GetLength(1); x++)
@@ -43,58 +43,6 @@ namespace OOPConsoleProject.Scenes
             Game.Player.position = new Vector2(33, 10);
             Game.Player.map = map;
 
-        }
-
-
-
-
-
-        public override void Render()
-        {
-            PrintMap();
-            foreach (GameObject go in gameObjects)
-            {
-                go.Print();
-            }
-            Game.Player.Print();
-        }
-        public override void Input()
-        {
-            input = Console.ReadKey(true).Key;
-        }
-        public override void Update()
-        {
-            Game.Player.Move(input);
-        }
-
-        public override void Result()
-        {
-            foreach (GameObject go in gameObjects)
-            {
-                if (Game.Player.position == go.position)
-                {
-                    go.Interact(Game.Player);
-                }
-            }
-        }
-        private void PrintMap()
-        {
-            Console.SetCursorPosition(0, 0);
-            for (int y = 0; y < map.GetLength(0); y++)
-            {
-                for (int x = 0; x < map.GetLength(1); x++)
-                {
-                    if (map[y, x] == true)
-                    {
-                        Console.Write(' ');
-                    }
-                    else
-                    {
-                        Console.Write('▒');
-                    }
-                }
-                Console.WriteLine();
-            }
         }
     }
 }

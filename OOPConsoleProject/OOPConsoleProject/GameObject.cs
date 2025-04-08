@@ -1,4 +1,4 @@
-﻿using OOPConsoleProject.GameObjects;
+﻿using OOPConsoleProject.Scenes;
 
 namespace OOPConsoleProject
 {
