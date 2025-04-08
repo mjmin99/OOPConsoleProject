@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OOPConsoleProject.Scenes;
 
 namespace OOPConsoleProject
 {
@@ -13,15 +14,37 @@ namespace OOPConsoleProject
 
         private static bool gameOver;
 
+
         public static void Run()
         {
-            while (gameOver == false)
+            Start(); // 초기설정 진행
+
+            while (gameOver == false) //게임오버 될 때까지 반복
             { 
+                Console.Clear();// 1차 버그 수정 -> 반복 시작될 때 콘솔 화면 클리어.
                 curScene.Render();
                 curScene.Input();
                 curScene.Update();
                 curScene.Result();
             }
+
+            End(); // 마무리 작업
+        }
+
+        private static void Start() // 콘솔에서 필요한 작업들을 여기서 진행
+        {
+            gameOver = false;
+
+            //씬 설정
+            sceneDic = new Dictionary<string, BaseScene>();
+            sceneDic.Add("Title", new TitleScene()); //씬이 추가될때마다 아래에 추가할 것
+
+            curScene = sceneDic["Title"]; //첫 시작 타이틀
+        }
+
+        private static void End()
+        { 
+        
         }
     }
 }
