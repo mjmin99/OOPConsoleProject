@@ -84,15 +84,7 @@ namespace OOPConsoleProject.Scenes
 
         public override void Result()
         {
-            switch (input)
-            {
-                case ConsoleKey.D1:
-                    Game.ChangeScene("Op2_1");
-                    break;
-                case ConsoleKey.D2:
-                    Game.ChangeScene("Op2_2");
-                    break;
-            }
+            Game.ChangeScene("KyungilGameAcademymainhall");
         }
     }
 }

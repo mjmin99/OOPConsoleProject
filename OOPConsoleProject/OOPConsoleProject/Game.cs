@@ -49,8 +49,9 @@ namespace OOPConsoleProject
             sceneDic.Add("Op2", new OpScene2());
             sceneDic.Add("Op2_1", new OpScene2_1());
             sceneDic.Add("Op2_2", new OpScene2_2());
+            sceneDic.Add("KyungilGameAcademymainhall", new KyungilGameAcademymainhall());
 
-            curScene = sceneDic["Op2"]; //첫 시작 타이틀
+            curScene = sceneDic["KyungilGameAcademymainhall"]; //첫 시작 타이틀
         }
 
         private static void End()
