@@ -25,6 +25,7 @@ namespace OOPConsoleProject
             while (gameOver == false) //게임오버 될 때까지 반복
             { 
                 Console.SetCursorPosition(0,0);// 1차 버그 수정 -> 반복 시작될 때 콘솔 화면 클리어.
+                Console.CursorVisible = false;
                 curScene.Render();
                 curScene.Input();
                 curScene.Update();
