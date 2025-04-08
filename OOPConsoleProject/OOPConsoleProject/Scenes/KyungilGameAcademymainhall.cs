@@ -48,7 +48,8 @@ namespace OOPConsoleProject.Scenes
                 }
             } 
             
-            Game.Player.position = new Vector2(1,1);
+            Game.Player.position = new Vector2(33,10);
+            Game.Player.map = map;
         }
 
        
