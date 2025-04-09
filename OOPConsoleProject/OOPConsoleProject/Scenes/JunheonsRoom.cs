@@ -35,6 +35,7 @@ namespace OOPConsoleProject.Scenes
 
             gameObjects = new List<GameObject>();
             gameObjects.Add(new Place("KyungilGameAcademymainhall", 'O', new Vector2(10, 6)));
+            gameObjects.Add(new Place("Talk_JH", 'H', new Vector2(10, 2)));
 
         }
         public override void Enter()

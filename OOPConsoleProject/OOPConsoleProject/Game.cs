@@ -37,6 +37,11 @@ namespace OOPConsoleProject
                 curScene.Input();
                 curScene.Update();
                 curScene.Result();
+
+                if ((isCleared[0] == true) && (isCleared[1] == true) && (isCleared[2] == true))
+                {
+                    gameOver = true;
+                }
             }
 
             End(); // 마무리 작업
@@ -75,23 +80,25 @@ namespace OOPConsoleProject
             sceneDic.Add("AllPublicAreas", new AllPublicAreas()); // 전체공지방                      ┃
             sceneDic.Add("AdministrativeOffice", new AdministrativeOffice()); //행정실               ┃
             sceneDic.Add("PlanningLectureRoom", new PlanningLectureRoom()); //기획강의실  ━━━━━━━━━━━┛
-            sceneDic.Add("Talk_JT", new Talk_JT()); //정택과의 대화
+            sceneDic.Add("Talk_JT", new Talk_JT()); //정택과의 대화    ━━━━━━━━━━━━━━━━━━━━━━━━┓
+            sceneDic.Add("Talk_JT_1", new Talk_JT_1()); //                                     ┃
+            sceneDic.Add("Talk_JT_2", new Talk_JT_2());   //                                   ┃
+            sceneDic.Add("Talk_JT_2_2", new Talk_JT_2_2()); //                       정택대화 ━┫
+            sceneDic.Add("Talk_JT_2_2_3", new Talk_JT_2_2_3());//                              ┃
+            sceneDic.Add("Talk_JT_e", new Talk_JT_e()); // 모든 문제 정답     ━━━━━━━━━━━━━━━━━┛
+            sceneDic.Add("Talk_JT_2_x", new Talk_JT_2_x()); //문제 오답시 컷신
+            sceneDic.Add("Talk_JS", new Talk_JS()); //재성과의 대화
+            sceneDic.Add("Talk_JH", new Talk_JH()); //준헌과의 대화
 
-            curScene = sceneDic["Op2_2"]; //첫 시작 타이틀
+            curScene = sceneDic["Talk_JS"]; //첫 시작 타이틀
 
 
         }
 
         private static void End()
         {
-            if (isCleared[0] == true)
-            {
-                // 클리어한 화면 출력.
-            }
-            else
-            {
-                // 게임오버 화면 출력.
-            }
+            Console.Clear();
+            Console.WriteLine("장대한 모험은 막을 내렸습니다.");
         }
     }
 }

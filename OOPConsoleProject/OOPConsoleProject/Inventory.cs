@@ -103,7 +103,13 @@ namespace OOPConsoleProject
 
             if (selectItem.isKey == true && Game.CurScene != Game.sceneDic["KyungilGameAcademymainhall"])
             {
-                Console.WriteLine("현재 맵에선 이 아이템을 사용할 수 없습니다.");
+                Console.WriteLine("이런! 이런 것은 쓸데가 따로 있다!");
+                Thread.Sleep(2000);
+                stack.Pop();
+            }
+            else if (selectItem.isKey == false)
+            {
+                Console.WriteLine("쪽지는 사용할 수 없다! (귀여워~ 쪽!)");
                 Thread.Sleep(2000);
                 stack.Pop();
             }
@@ -156,9 +162,9 @@ namespace OOPConsoleProject
         private void InfoConfirm()
         {
             Item selectItem = items[selectIndex];
-            Console.WriteLine($"아이템 이름 : \n\n {selectItem.name}");
+            Console.WriteLine($"아이템 이름 : \n\n{selectItem.name}");
             Console.WriteLine();
-            Console.WriteLine($"아이템 설명 : \n\n {selectItem.description}");
+            Console.WriteLine($"아이템 설명 : \n\n{selectItem.description}");
             Console.WriteLine();
             Console.WriteLine("0. 뒤로가기");
 

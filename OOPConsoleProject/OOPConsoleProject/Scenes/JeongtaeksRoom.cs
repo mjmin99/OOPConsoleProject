@@ -36,7 +36,7 @@ namespace OOPConsoleProject.Scenes
 
             gameObjects = new List<GameObject>();
             gameObjects.Add(new Place("KyungilGameAcademymainhall", 'O', new Vector2(10, 6)));
-            gameObjects.Add(new Place("Talk_JT", 'J', new Vector2(10, 2)));
+            gameObjects.Add(new Place("Talk_JT", 'T', new Vector2(10, 2)));
             //<-새로운게 추가된다면 이 줄에 적어야함
 
         }
