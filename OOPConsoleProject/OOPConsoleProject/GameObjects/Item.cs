@@ -12,7 +12,7 @@ namespace OOPConsoleProject.GameObjects
         public string description;
 
         public Item(ConsoleColor color, char symbol, Vector2 position)
-            : base(ConsoleColor.Yellow, symbol, position)
+            : base(ConsoleColor.Yellow, symbol, position, true)
         {
         }
 

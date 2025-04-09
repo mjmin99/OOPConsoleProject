@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OOPConsoleProject.GameObjects;
+using OOPConsoleProject.Items;
 
 namespace OOPConsoleProject.Scenes
 {
@@ -53,6 +54,7 @@ namespace OOPConsoleProject.Scenes
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(30, 8)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(36, 8)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(37, 8)));
+            gameObjects.Add(new Note(new Vector2(32, 10)));
             //<-새로운게 추가된다면 이 줄에 적어야함
 
         }

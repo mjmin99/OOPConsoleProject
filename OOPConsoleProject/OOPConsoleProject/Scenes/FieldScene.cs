@@ -24,6 +24,9 @@ namespace OOPConsoleProject.Scenes
                 go.Print();
             }
             Game.Player.Print();
+
+            Console.SetCursorPosition(0, map.GetLength(0) +2);
+            Game.Player.inventory.PrintALL();
         }
         public override void Input()
         {
@@ -41,6 +44,11 @@ namespace OOPConsoleProject.Scenes
                 if (Game.Player.position == go.position) // 두 값끼리 비교를 위해 연산자 재정의를 해본다.
                 {
                     go.Interact(Game.Player);
+                    if(go.isOnce == true)
+                        { 
+                            gameObjects.Remove(go);
+                        }
+                    break;
                 }
             }
         }
