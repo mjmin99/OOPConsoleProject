@@ -35,7 +35,8 @@ namespace OOPConsoleProject.Scenes
             }
 
             gameObjects = new List<GameObject>();
-            gameObjects.Add(new Place("KyungilGameAcademymainhall", 'O', new Vector2(10, 6))); //임시로 타이틀을 넣었으나 나중에 포탈로 다른 맵과 이어야함
+            gameObjects.Add(new Place("KyungilGameAcademymainhall", 'O', new Vector2(10, 6)));
+            gameObjects.Add(new Place("Talk_JT", 'J', new Vector2(10, 2)));
             //<-새로운게 추가된다면 이 줄에 적어야함
 
         }

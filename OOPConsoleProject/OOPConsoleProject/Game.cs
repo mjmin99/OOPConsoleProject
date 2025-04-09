@@ -73,6 +73,7 @@ namespace OOPConsoleProject
             sceneDic.Add("AllPublicAreas", new AllPublicAreas()); // 전체공지방                      ┃
             sceneDic.Add("AdministrativeOffice", new AdministrativeOffice()); //행정실               ┃
             sceneDic.Add("PlanningLectureRoom", new PlanningLectureRoom()); //기획강의실  ━━━━━━━━━━━┛
+            sceneDic.Add("Talk_JT", new Talk_JT()); //정택과의 대화
 
             curScene = sceneDic["Op2_2"]; //첫 시작 타이틀
 
