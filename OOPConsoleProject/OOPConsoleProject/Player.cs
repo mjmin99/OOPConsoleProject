@@ -4,6 +4,14 @@
     {
         public Vector2 position;
         public bool[,] map;
+        public Inventory inventory;
+
+
+        public Player()
+        { 
+            inventory = new Inventory();
+        }
+
 
 
         public void Print()
