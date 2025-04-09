@@ -153,8 +153,10 @@ namespace OOPConsoleProject
         private void InfoConfirm()
         {
             Item selectItem = items[selectIndex];
-            Console.WriteLine($"아이템 이름{selectItem.name}");
-            Console.WriteLine($"아이템 설명{selectItem.description}");
+            Console.WriteLine($"아이템 이름 : \n\n {selectItem.name}");
+            Console.WriteLine();
+            Console.WriteLine($"아이템 설명 : \n\n {selectItem.description}");
+            Console.WriteLine(); 
             Console.WriteLine("0. 뒤로가기");
 
             ConsoleKey input = Console.ReadKey(true).Key;

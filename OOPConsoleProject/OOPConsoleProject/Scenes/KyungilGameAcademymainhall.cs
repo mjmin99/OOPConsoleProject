@@ -54,7 +54,10 @@ namespace OOPConsoleProject.Scenes
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(30, 8)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(36, 8)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(37, 8)));
-            gameObjects.Add(new Note(new Vector2(32, 10)));
+            gameObjects.Add(new Note(new Vector2(32, 10))); //아이템
+            gameObjects.Add(new Key1(new Vector2(31, 9))); //정택키
+            gameObjects.Add(new Key2(new Vector2(32, 9))); //재성키
+            gameObjects.Add(new Key3(new Vector2(33, 9))); //준헌키
             //<-새로운게 추가된다면 이 줄에 적어야함
 
         }
