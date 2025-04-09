@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OOPConsoleProject.GameObjects;
+using OOPConsoleProject.Items;
 
 namespace OOPConsoleProject.Scenes
 {
@@ -46,6 +47,7 @@ namespace OOPConsoleProject.Scenes
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(30, 14)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(31, 14)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(32, 14)));
+            gameObjects.Add(new Key1(new Vector2(9, 11))); //정택키 / 셋팅 완료
             //<-새로운게 추가된다면 이 줄에 적어야함
 
         }

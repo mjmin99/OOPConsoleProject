@@ -6,7 +6,7 @@ namespace OOPConsoleProject.Items
     public class Key1 : Item
     {
         public Key1(Vector2 position)
-            : base(ConsoleColor.Yellow, 'N', position)
+            : base(ConsoleColor.Yellow, ' ', position)
         {
             name = "정택의 방을 여는 열쇠";
             description = "\"좋은아침이야~ 좋은아침이면~ 출석체크하자!\"라는 명언이 적혀있다... 정택의 방으로 들어가는 포탈을 생성한다. \n ※ 주의사항 만약... 플밍반이 아니라 다른 곳에서 사용했을 경우... 게임을 끝내지 못하게 된다.";

@@ -32,8 +32,8 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("           \\      /                  ");
             Console.WriteLine("      \\                /             ");
             Console.WriteLine("　　\\　  형식상 설명    　/          ");
-            Console.WriteLine("-　-　　  은 생략하죠  　-　-　-      ");
-            Console.WriteLine("　　/　     (이상한) 　　\\           ");
+            Console.WriteLine("-　-　　 은 생략하죠   　-　-　-      ");
+            Console.WriteLine("　　/　    (이상한) 　 　\\           ");
             Console.WriteLine("  /    / (녀석이네..)  .              ");
             Console.WriteLine("    /                \\               ");
             Console.WriteLine("          /  |                        ");

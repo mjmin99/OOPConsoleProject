@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OOPConsoleProject.GameObjects;
+using OOPConsoleProject.Items;
 
 namespace OOPConsoleProject.Scenes
 {
@@ -39,6 +40,8 @@ namespace OOPConsoleProject.Scenes
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(25, 6)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(37, 6)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(38, 6)));
+            gameObjects.Add(new Key3(new Vector2(26, 3))); //준헌키 / 셋팅 끝
+            gameObjects.Add(new Note1(new Vector2(57, 2))); //정택쪽지 / 배치 완
             //<-새로운게 추가된다면 이 줄에 적어야함
         }
         public override void Enter()

@@ -71,8 +71,9 @@ namespace OOPConsoleProject.Scenes
             Util.PrintNoLine(" 즐거움이", ConsoleColor.Gray, 433);
             Util.PrintNoLine(" 가득한", ConsoleColor.Gray, 433);
             Util.PrintNoLine(" 배움으로", ConsoleColor.Gray, 433);
+            Util.PrintNoLine(" 무척이나", ConsoleColor.Gray, 433);
             Util.PrintNoLine(" 행복한", ConsoleColor.Magenta, 433);
-            Util.PrintNoLine(" 곳이 아닐까...", ConsoleColor.Gray, 433);
+            Util.PrintNoLine(" 곳이 아닐까?", ConsoleColor.Gray, 433);
             Console.WriteLine();
             Console.WriteLine();
             // Util.Print("착한일을 많이하면 다음 생에는 기획반에서 태어날 수 있을까...", ConsoleColor.Gray, 733);

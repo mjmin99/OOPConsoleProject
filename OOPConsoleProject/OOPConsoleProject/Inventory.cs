@@ -57,8 +57,8 @@ namespace OOPConsoleProject
         }
 
         private void Menu()
-        { 
-            PrintALL();
+        {
+            PrintALLAtInventory();
             Console.WriteLine("1. 사용하기");
             Console.WriteLine("2. 살펴보기");
             Console.WriteLine("0. 뒤로가기");
@@ -80,7 +80,7 @@ namespace OOPConsoleProject
 
         private void UseMenu()
         {
-            PrintALL();
+            PrintALLAtInventory();
             Console.WriteLine("사용할 아이템을 선택해주세요");
             Console.WriteLine("뒤로가기는 0");
             ConsoleKey input = Console.ReadKey(true).Key;
@@ -127,7 +127,7 @@ namespace OOPConsoleProject
 
         private void InfoMenu()
         {
-            PrintALL();
+            PrintALLAtInventory();
             Console.WriteLine("살펴볼 아이템을 선택해주세요");
             Console.WriteLine("뒤로가기는 0");
             ConsoleKey input = Console.ReadKey(true).Key;
@@ -171,16 +171,36 @@ namespace OOPConsoleProject
 
         public void PrintALL()
         {
-            Console.WriteLine("======소유한 아이템======");
+            int linechecker = 0;
+            Console.SetCursorPosition(70, 0);
+            Console.WriteLine("-=-=-=-소유한 아이템 [i키를 통해 open]-=-=-=-");
+            if (items.Count == 0)
+            {
+                Console.SetCursorPosition(70, 1);
+                Console.WriteLine("없음");
+            }
+            for (int i = 0; i < items.Count; i++)
+            {
+                Console.SetCursorPosition(70, i + 1);
+                Console.WriteLine("{0}. {1}", i+1, items[i].name);
+                linechecker++;
+            }
+            Console.SetCursorPosition(70, linechecker+2);
+            Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+        }
+
+        public void PrintALLAtInventory()
+        {
+            Console.WriteLine("-=-=-=-소유한 아이템 [i키를 통해 open]-=-=-=-");
             if (items.Count == 0)
             {
                 Console.WriteLine("없음");
             }
             for (int i = 0; i < items.Count; i++)
             {
-                Console.WriteLine("{0}. {1}", i+1, items[i].name);
+                Console.WriteLine("{0}. {1}", i + 1, items[i].name);
             }
-            Console.WriteLine("=========================");
+            Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
         }
     }
 }

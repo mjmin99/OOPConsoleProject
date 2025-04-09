@@ -1,4 +1,5 @@
 ﻿using OOPConsoleProject.GameObjects;
+using OOPConsoleProject.Items;
 
 namespace OOPConsoleProject.Scenes
 {
@@ -36,12 +37,20 @@ namespace OOPConsoleProject.Scenes
             gameObjects.Add(new Place("AllPublicAreas", 'O', new Vector2(12, 4)));
             gameObjects.Add(new Place("AdministrativeOffice", 'O', new Vector2(20, 4)));
             gameObjects.Add(new Place("PlanningLectureRoom", 'O', new Vector2(26, 4)));
+            gameObjects.Add(new Note2(new Vector2(17, 1))); //재성쪽지 / 배치 완료
             //<-새로운게 추가된다면 이 줄에 적어야함
         }
         public override void Enter()
         {
-            Game.Player.position = new Vector2(16, 5);
-            Game.Player.map = map;
+            if (Game.prevSceneName == "PlanningLectureRoom")
+            {
+                Game.Player.position = new Vector2(26, 5);
+            }
+            else
+            {
+                Game.Player.position = new Vector2(16, 5);
+                Game.Player.map = map;
+            }
         }
     }
 }
