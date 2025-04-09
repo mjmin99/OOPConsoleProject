@@ -45,6 +45,9 @@
                 case ConsoleKey.D:
                     targetPos.x++;
                     break;
+                    case ConsoleKey.I:
+                    inventory.Open();
+                    break;
             }
             if (map[targetPos.y, targetPos.x] == true)
             { 

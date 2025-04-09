@@ -25,8 +25,8 @@ namespace OOPConsoleProject.Scenes
             }
             Game.Player.Print();
 
-            Console.SetCursorPosition(0, map.GetLength(0) +2);
-            Game.Player.inventory.PrintALL();
+            //Console.SetCursorPosition(0, map.GetLength(0) +2); 게임화면에서 지닌물건을 바로 보여주는 디버그용
+            //Game.Player.inventory.PrintALL();
         }
         public override void Input()
         {

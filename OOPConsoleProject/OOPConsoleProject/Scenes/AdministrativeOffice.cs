@@ -37,8 +37,8 @@ namespace OOPConsoleProject.Scenes
             gameObjects = new List<GameObject>();
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(24, 6)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(25, 6)));
-            gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(36, 6)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(37, 6)));
+            gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(38, 6)));
             //<-새로운게 추가된다면 이 줄에 적어야함
         }
         public override void Enter()
