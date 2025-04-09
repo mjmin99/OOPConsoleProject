@@ -11,6 +11,9 @@ namespace OOPConsoleProject
     {
         private static Dictionary<string, BaseScene> sceneDic;
         private static BaseScene curScene;
+
+        public static BaseScene CurScene { get { return curScene; } } // 질문 받아서 작성한 내용
+
         public static string prevSceneName;
 
         private static Player player;

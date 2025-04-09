@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using OOPConsoleProject.GameObjects;
+using OOPConsoleProject.Scenes;
 
 namespace OOPConsoleProject.Items
 {
@@ -19,7 +20,13 @@ namespace OOPConsoleProject.Items
 
         public override void Use()
         {
-            
+            //현재 게임씬에 포탈 추가하기
+            if (Game.CurScene is FieldScene)
+            { 
+            FieldScene fieldScene = (FieldScene)Game.CurScene;
+                fieldScene.AddGameObject(new Place("Jeongtaeksroom",'o', new Vector2(49, 6))); // 질문 받아서 작성한 내용
+
+            }
         }
     }
 }

@@ -72,5 +72,10 @@ namespace OOPConsoleProject.Scenes
                 Console.WriteLine(); //4차 버그 줄바꿈 위치가 잘못되어 있었음
             }
         }
+
+        public void AddGameObject(GameObject go) // 질문 받아서 작성한 내용
+        { 
+            gameObjects.Add(go);
+        }
     }
 }
