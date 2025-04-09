@@ -121,7 +121,6 @@ namespace OOPConsoleProject.Scenes
                     Game.ChangeScene("Talk_JT_1");
                     break;
                 case ConsoleKey.D2:
-                    Game.isCleared[0] = true;
                     Game.ChangeScene("Talk_JT_2");
                     break;
             }

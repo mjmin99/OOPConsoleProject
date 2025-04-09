@@ -85,12 +85,16 @@ namespace OOPConsoleProject
             sceneDic.Add("Talk_JT_2", new Talk_JT_2());   //                                   ┃
             sceneDic.Add("Talk_JT_2_2", new Talk_JT_2_2()); //                       정택대화 ━┫
             sceneDic.Add("Talk_JT_2_2_3", new Talk_JT_2_2_3());//                              ┃
-            sceneDic.Add("Talk_JT_e", new Talk_JT_e()); // 모든 문제 정답     ━━━━━━━━━━━━━━━━━┛
-            sceneDic.Add("Talk_JT_2_x", new Talk_JT_2_x()); //문제 오답시 컷신
+            sceneDic.Add("Talk_JT_e", new Talk_JT_e()); // 모든 문제 정답                      ┃
+            sceneDic.Add("Talk_JT_2_x", new Talk_JT_2_x()); //문제 오답시 컷신  ━━━━━━━━━━━━━━━┛
             sceneDic.Add("Talk_JS", new Talk_JS()); //재성과의 대화
+            sceneDic.Add("Talk_JS_1", new Talk_JS_1());
+            sceneDic.Add("Talk_JS_2", new Talk_JS_2());
+            sceneDic.Add("Talk_JS_e", new Talk_JS_e());
+            sceneDic.Add("Talk_JS_x", new Talk_JS_x());
             sceneDic.Add("Talk_JH", new Talk_JH()); //준헌과의 대화
 
-            curScene = sceneDic["Talk_JS"]; //첫 시작 타이틀
+            curScene = sceneDic["Talk_JS1"]; //첫 시작 타이틀
 
 
         }

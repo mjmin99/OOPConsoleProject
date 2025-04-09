@@ -34,12 +34,17 @@ namespace OOPConsoleProject.Scenes
 
         public override void Update()
         {
-
+            switch (input)
+            {
+                default:
+                    Game.ChangeScene("Jeongtaeksroom");
+                    break;
+            }
         }
 
         public override void Result()
         {
-            Game.ChangeScene("Jeongtaeksroom");
+            //Game.ChangeScene("Jeongtaeksroom");
         }
     }
 }
