@@ -10,6 +10,7 @@ namespace OOPConsoleProject.GameObjects
     {
         public string name;
         public string description;
+        public bool isKey;
 
         public Item(ConsoleColor color, char symbol, Vector2 position)
             : base(ConsoleColor.Yellow, symbol, position, true)

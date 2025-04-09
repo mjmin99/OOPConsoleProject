@@ -8,6 +8,7 @@ namespace OOPConsoleProject.Scenes
 {
     class Talk_JS : BaseScene
     {
+        private ConsoleKey input;
         public override void Render()
         {
 
@@ -22,7 +23,7 @@ namespace OOPConsoleProject.Scenes
 
         public override void Input()
         {
-           
+            input = Console.ReadKey(true).Key;
         }
 
         public override void Update()
@@ -32,7 +33,7 @@ namespace OOPConsoleProject.Scenes
 
         public override void Result()
         {
-           
+            //Game.ChangeScene("KyungilGameAcademymainhall");
         }
     }
 }

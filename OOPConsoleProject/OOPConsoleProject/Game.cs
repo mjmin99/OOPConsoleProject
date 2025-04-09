@@ -9,7 +9,7 @@ namespace OOPConsoleProject
 {
     public static class Game
     {
-        private static Dictionary<string, BaseScene> sceneDic;
+        public static Dictionary<string, BaseScene> sceneDic;
         private static BaseScene curScene;
 
         public static BaseScene CurScene { get { return curScene; } } // 질문 받아서 작성한 내용
@@ -20,6 +20,8 @@ namespace OOPConsoleProject
         public static Player Player { get { return player; } }
 
         private static bool gameOver;
+
+        public static bool[] isCleared = new bool[3];
 
 
         public static void Run()
@@ -81,8 +83,15 @@ namespace OOPConsoleProject
         }
 
         private static void End()
-        { 
-        
+        {
+            if (isCleared[0] == true)
+            {
+                // 클리어한 화면 출력.
+            }
+            else
+            {
+                // 게임오버 화면 출력.
+            }
         }
     }
 }

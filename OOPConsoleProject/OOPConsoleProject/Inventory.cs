@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OOPConsoleProject.GameObjects;
+﻿using OOPConsoleProject.GameObjects;
 
 namespace OOPConsoleProject
 {
@@ -14,7 +8,7 @@ namespace OOPConsoleProject
         private Stack<string> stack;
         private int selectIndex;
 
-        public Inventory() 
+        public Inventory()
         {
             items = new List<Item>();
             stack = new Stack<string>();
@@ -25,12 +19,12 @@ namespace OOPConsoleProject
         }
 
         public void Remove(Item item)
-        { 
+        {
             items.Remove(item);
         }
 
         public void Remove(int index)
-        { 
+        {
             items.RemoveAt(index);
         }
 
@@ -47,12 +41,12 @@ namespace OOPConsoleProject
                 Console.Clear();
                 switch (stack.Peek())
                 {
-                    case "Menu":        Menu(); break;
-                    case "UseMenu":     UseMenu(); break;
-                    case "InfoMenu":    InfoMenu(); break;
-                    case "UseConfirm":  UseConfirm(); break;
+                    case "Menu": Menu(); break;
+                    case "UseMenu": UseMenu(); break;
+                    case "InfoMenu": InfoMenu(); break;
+                    case "UseConfirm": UseConfirm(); break;
                     case "InfoConfirm": InfoConfirm(); break;
-                 }
+                }
             }
         }
 
@@ -106,23 +100,32 @@ namespace OOPConsoleProject
         private void UseConfirm()
         {
             Item selectItem = items[selectIndex];
-            Console.WriteLine("{0} 을/를 사용하시겠습니까? (y/n)", selectItem.name);
 
-            ConsoleKey input = Console.ReadKey(true).Key;
-            switch (input)
+            if (selectItem.isKey == true && Game.CurScene != Game.sceneDic["KyungilGameAcademymainhall"])
             {
-                case ConsoleKey.Y:
-                    selectItem.Use();
-                    Console.WriteLine("{0} 을/를 사용했습니다.", selectItem.name);
-                    Remove(selectItem);
-                    stack.Pop();
-                    break;
-                case ConsoleKey.N:
-                    stack.Pop();
-                    break;
-            
+                Console.WriteLine("현재 맵에선 이 아이템을 사용할 수 없습니다.");
+                Thread.Sleep(2000);
+                stack.Pop();
             }
-        
+            else
+            {
+                Console.WriteLine("{0} 을/를 사용하시겠습니까? (y/n)", selectItem.name);
+
+                ConsoleKey input = Console.ReadKey(true).Key;
+                switch (input)
+                {
+                    case ConsoleKey.Y:
+                        selectItem.Use();
+                        Console.WriteLine("{0} 을/를 사용했습니다.", selectItem.name);
+                        Remove(selectItem);
+                        stack.Pop();
+                        break;
+                    case ConsoleKey.N:
+                        stack.Pop();
+                        break;
+
+                }
+            }
         }
 
         private void InfoMenu()
@@ -156,7 +159,7 @@ namespace OOPConsoleProject
             Console.WriteLine($"아이템 이름 : \n\n {selectItem.name}");
             Console.WriteLine();
             Console.WriteLine($"아이템 설명 : \n\n {selectItem.description}");
-            Console.WriteLine(); 
+            Console.WriteLine();
             Console.WriteLine("0. 뒤로가기");
 
             ConsoleKey input = Console.ReadKey(true).Key;
@@ -171,7 +174,7 @@ namespace OOPConsoleProject
 
         public void PrintALL()
         {
-            int linechecker = 0;
+            int linechecker = 1;
             Console.SetCursorPosition(70, 0);
             Console.WriteLine("-=-=-=-소유한 아이템 [i키를 통해 open]-=-=-=-");
             if (items.Count == 0)
@@ -182,11 +185,19 @@ namespace OOPConsoleProject
             for (int i = 0; i < items.Count; i++)
             {
                 Console.SetCursorPosition(70, i + 1);
-                Console.WriteLine("{0}. {1}", i+1, items[i].name);
+                Console.WriteLine("{0}. {1}", i + 1, items[i].name);
                 linechecker++;
             }
-            Console.SetCursorPosition(70, linechecker+2);
-            Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+            if (items.Count == 0)
+            {
+                Console.SetCursorPosition(70, linechecker + 1);
+                Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+            }
+            else
+            {
+                Console.SetCursorPosition(70, linechecker);
+                Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+            }
         }
 
         public void PrintALLAtInventory()

@@ -15,7 +15,8 @@ namespace OOPConsoleProject.Items
             : base(ConsoleColor.Yellow, ' ', position)
         {
             name = "준헌의 방을 여는 열쇠";
-            description = "\"주말엔 좀 쉬자\"라는 글이 프랑스어로 적혀있다. 준헌의 방으로 들어가는 포탈을 생성한다.\n ※ 주의사항 만약... 플밍반이 아니라 다른 곳에서 사용했을 경우... 게임을 끝내지 못하게 된다.";
+            description = "\"주말엔 좀 쉬자\"라는 글이 프랑스어로 적혀있다. 준헌의 방으로 들어가는 포탈을 생성한다.\n ※ 플밍반에서만 사용할 수 있습니다.";
+            isKey = true;
         }
 
         public override void Use()
