@@ -94,9 +94,11 @@ namespace OOPConsoleProject
             sceneDic.Add("End_JT", new End_JT());
             sceneDic.Add("End_JH", new End_JH());
             sceneDic.Add("End1", new End1());
+            sceneDic.Add("End2", new End2());
 
 
-            curScene = sceneDic["Talk_JT_e"]; //첫 시작 타이틀
+
+            curScene = sceneDic["End2"]; //첫 시작 타이틀
 
 
         }
@@ -104,7 +106,11 @@ namespace OOPConsoleProject
         private static void End()
         {
             Console.Clear();
-            Console.WriteLine("장대한 모험은 막을 내렸습니다.");
+            Console.WriteLine("플레이 해주셔서 감사합니다.");
+            Console.WriteLine();
+            Console.WriteLine("제작자 : 민만준");
+            Console.WriteLine();
+            Console.WriteLine("기획 의도 : 어딘가를 탈출 한다는 건. 정말 홀가분한 마음으로 \n\n그곳을 탈출했어도 편한 마음으로 살아가는 것이 진정한 탈출이라고 생각했습니다.\n\n따라서 경일게임아카데미를 탈출한다는 건 열심히 배운 뒤 취업을 달성하는\n\n그런 총체적인 노력의 일환인셈입니다.\n\n이 글을 볼 수 있는 사람은 제 친한 전우나 동료라고 사료됨으로 모두 \n\n각자 힘든 시간 이겨내고 \'탈출\'하셨으면 좋겠습니다.\n\n경일게임아카데미 화이팅~");
         }
     }
 }
