@@ -29,7 +29,9 @@ namespace OOPConsoleProject.Scenes
                 Console.WriteLine();
                 Console.WriteLine("아 재성이는 방정리 중이라 못왔데");
                 Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("못왔지만 막내를 보낸 정성이 느껴지면 아무키나 눌러서 계속...");
+                Console.ResetColor();
             }
             else
             {

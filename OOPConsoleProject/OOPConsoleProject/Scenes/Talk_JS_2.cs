@@ -28,10 +28,12 @@ namespace OOPConsoleProject.Scenes
             Thread.Sleep(1000);
             Console.WriteLine();
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("1. 잘 정리되어 있는 방을 어지럽힌다.");
             Console.WriteLine("2. 아까 쪽지에 대해서 질문한다.");
             Console.WriteLine("3. 난데없이 하늘을 쳐다본다.");
             Console.WriteLine("4. 갑자기 춤을 추는 기행을 부린다.");
+            Console.ResetColor();
         }
 
         public override void Input()

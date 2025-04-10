@@ -55,7 +55,9 @@ namespace OOPConsoleProject.Scenes
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("탈출을 계속하려면 아무키나 눌러서 계속...");
+                Console.ResetColor();
             }
 
         }

@@ -29,7 +29,9 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine();
             Console.WriteLine();
             Thread.Sleep(1000);
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("마음이 따뜻해지는 걸 느꼈다면 아무키를 누르고 계속...");
+            Console.ResetColor();
             
         }
 

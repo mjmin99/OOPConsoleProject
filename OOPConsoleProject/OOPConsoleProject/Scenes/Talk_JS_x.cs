@@ -28,7 +28,9 @@ namespace OOPConsoleProject.Scenes
             Thread.Sleep(200);
             Console.WriteLine();
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("TIL 작성하고 계속하고 싶으면 아무키나 눌러서 계속...");
+            Console.ResetColor();
        
         }
 

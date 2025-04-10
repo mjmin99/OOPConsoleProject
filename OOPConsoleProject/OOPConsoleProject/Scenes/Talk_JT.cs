@@ -104,8 +104,10 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("나는 정택, 전사다. 교육과 수업 담당이다.");
             Console.WriteLine("왜 거기 가만히 서서 날 지켜보는 거지? 용건이라도 있나?");
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("1. 죄송합니다 강의실을 헷갈렸습니다.");
             Console.WriteLine("2. 김전사를 무찌른다.");
+            Console.ResetColor();
         }
 
         public override void Input()

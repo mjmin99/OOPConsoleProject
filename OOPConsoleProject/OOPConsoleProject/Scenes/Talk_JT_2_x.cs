@@ -24,7 +24,9 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("그것이 \'진정한 탈출\'로 이어지는 길이다!");
             Console.WriteLine();
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("공부를 다시 하려면 아무키나 눌러서 계속...");
+            Console.ResetColor();
         }
 
         public override void Input()

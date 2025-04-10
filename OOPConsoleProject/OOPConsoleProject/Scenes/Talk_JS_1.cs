@@ -23,7 +23,9 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("다음부턴 이렇게 쉽게 보내줄 생각은 없다는 것만 알아두도록 해");
             Console.WriteLine();
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("간신히 탈출해서 나가고 싶다면 아무키나 눌러서 계속...");
+            Console.ResetColor();
 
         }
 

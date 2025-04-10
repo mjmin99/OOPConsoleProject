@@ -43,7 +43,9 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("탈출하려면 아무키나 누르세요...");
+            Console.ResetColor();
             Console.WriteLine("※ 비슷해보이는 모든 것들은 전부 우연의 일치이며,");
             Console.WriteLine("  게임을 위해 창작된 픽션일 뿐입니다. 실제와 아무 연관이 없음을 밝힙니다.");
         }

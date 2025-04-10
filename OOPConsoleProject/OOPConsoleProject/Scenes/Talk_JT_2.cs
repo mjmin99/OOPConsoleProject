@@ -67,10 +67,12 @@ namespace OOPConsoleProject.Scenes
             Thread.Sleep(1000);
             Console.WriteLine();
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("1. 절차지향");
             Console.WriteLine("2. 객체지향");
             Console.WriteLine("3. 순서지향");
             Console.WriteLine("4. 커서지향");
+            Console.ResetColor();
 
         }
 

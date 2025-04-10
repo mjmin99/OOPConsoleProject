@@ -55,7 +55,9 @@ namespace OOPConsoleProject.Scenes
             Thread.Sleep(1000);
             Console.WriteLine();
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("아무키나 눌러서 자리로 돌아가기...");
+            Console.ResetColor();
         }
 
         public override void Input()

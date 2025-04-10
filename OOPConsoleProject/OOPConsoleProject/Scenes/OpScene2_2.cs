@@ -70,6 +70,11 @@ namespace OOPConsoleProject.Scenes
             Thread.Sleep(3000);
             Console.WriteLine("내면속 존재는 홀연히 사라졌다. 그전에 잠깐 이건 정말 현실인가.");
             Console.WriteLine("내면속 존재의 말을 온전히 믿어도 되는 걸까?");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("그래도 행동하기로 마음먹었다면 아무키를 눌러서 계속...");
+            Console.ResetColor();
         }
 
         public override void Input()

@@ -103,8 +103,10 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("반갑다 친구.. 내 이름은 준헌. 이 세계에서 제일 차가운 남자다");
             Console.WriteLine("하지만 학생과 형제들에게 만큼은 누구보다도 따듯하지...");
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("1. 죄송합니다 강의실을 헷갈렸습니다.");
             Console.WriteLine("2. 박도적을 무찌른다.");
+            Console.ResetColor();
         }
 
         public override void Input()

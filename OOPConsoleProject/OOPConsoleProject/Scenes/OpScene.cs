@@ -50,8 +50,10 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("          /  |                        ");
             Console.WriteLine("              .                       ");
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("1. 들린다.");
             Console.WriteLine("2. 안들린다.");
+            Console.ResetColor();
 
 
         }

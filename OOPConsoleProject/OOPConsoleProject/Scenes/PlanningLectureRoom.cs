@@ -86,6 +86,7 @@ namespace OOPConsoleProject.Scenes
             Util.PrintNoLine(" 수 있을까...", ConsoleColor.Gray, 433);
             Console.WriteLine();
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Util.Print("(시덥잖은 감상을 모두 마쳤으면 아무키나 눌러서 계속)", ConsoleColor.DarkYellow, 733);
         }
         public override void Input()

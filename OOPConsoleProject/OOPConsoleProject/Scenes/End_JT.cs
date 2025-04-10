@@ -26,7 +26,9 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("그간 고생많았다. 뛰다가 넘어지지말고 차근차근 알았지?");
             Thread.Sleep(1000);
             Console.WriteLine();
-            Console.WriteLine("덕담을 듣고 나아갈 준비가 됐다면 아무키나 눌러서 계속...");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("덕담을 듣고 나아갈 준비가 됐다면 아무키나 눌러서 계속...");
+                Console.ResetColor();
             }
             else
             {

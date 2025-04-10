@@ -35,10 +35,12 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("다음 설명 중 옳지 않은 것을 고르시오");
             Console.WriteLine();
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("1. 이벤트 - 이벤트를 선언하지 않은 외부 객체에서 참조해 참조한 메서드를 호출할 수 있다");
             Console.WriteLine("2. 이벤트 - 이벤트는 반환형이 있는 함수만 참조할 수 있다.");
             Console.WriteLine("3. 람다식 - 익명메서드를 간결하게 표현하는 방식 중 하나이다");
             Console.WriteLine("4. 람다식 - 주로 복잡한 로직이나 긴 코드를 작성할 때 효과적으로 사용된다");
+            Console.ResetColor();
         }
 
         public override void Input()
