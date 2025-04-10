@@ -32,10 +32,13 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(1000);
             Console.WriteLine("너무 훌륭하게 잘해주었다.");
+            Console.WriteLine();
             Thread.Sleep(1000);
             Console.WriteLine("물론 앞으로 취업의 문턱이 쉽진 않겠지만");
+            Console.WriteLine();
             Thread.Sleep(1000);
             Console.WriteLine("이렇게 열심히 하는 너라면 잘 될 수 있을 거라고 믿는다.");
+            Console.WriteLine();
             Thread.Sleep(1000);
             Console.WriteLine("\'경일게임아카데미\'를 무사히 탈출 할 수 있겠구나!!");
             Thread.Sleep(1000);

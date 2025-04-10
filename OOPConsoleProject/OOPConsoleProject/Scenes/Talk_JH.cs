@@ -15,7 +15,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine(" ///////\\\\\\\\\\\\  ");
             Console.WriteLine("//           \\\\                                  ━          ");
             Console.WriteLine("|--[o]---[o]--|                                                ");
-            Console.WriteLine("|      ^      |                    ━                           ");
+            Console.WriteLine("|      ^    . |                    ━                           ");
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(200);
@@ -24,7 +24,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine(" ///////\\\\\\\\\\\\  ");
             Console.WriteLine("//           \\\\                        ━         ━          ");
             Console.WriteLine("|--[-]---[-]--|            ㅈ                                  ");
-            Console.WriteLine("|      ^      |       ━            ━                  ━        ");
+            Console.WriteLine("|      ^    . |       ━            ━                  ━        ");
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(200);
@@ -33,7 +33,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine(" ///////\\\\\\\\\\\\  ");
             Console.WriteLine("//           \\\\            ━           ━         ━          ");
             Console.WriteLine("|--[o]---[o]--|            ㅈ                 ㅈ               ");
-            Console.WriteLine("|      ^      |       ━            ━                  ━        ");
+            Console.WriteLine("|      ^    . |       ━            ━                  ━        ");
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(200);
@@ -42,7 +42,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine(" ///////\\\\\\\\\\\\  ");
             Console.WriteLine("//           \\\\            ━    ━      ━         ━      ━  ");
             Console.WriteLine("|--[o]---[o]--|     ㅅ     ㅈ        ㅂ       ㅈ       ㅈ      ");
-            Console.WriteLine("|      ^      |       ━   ━        ━        ━         ━        ");
+            Console.WriteLine("|      ^    . |       ━   ━        ━        ━         ━        ");
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(200);
@@ -51,7 +51,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine(" ///////\\\\\\\\\\\\  ");
             Console.WriteLine("//           \\\\       ━    ━    ━      ━   ━     ━    ━ ━  ");
             Console.WriteLine("|--[-]---[-]--|     ㅅ  ㅇ ㅈ   ㅉ   ㅂㅈㅎ / ㅈㅇ :   저      ");
-            Console.WriteLine("|      ^      |       ━   ━   ━    ━    ━   ━    ━    ━  ━     ");
+            Console.WriteLine("|      ^    . |       ━   ━   ━    ━    ━   ━    ━    ━  ━     ");
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(200);
@@ -60,7 +60,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine(" ///////\\\\\\\\\\\\  ");
             Console.WriteLine("//           \\\\     ━ ━ ━  ━  ━ ━━     ━ ━ ━  ━  ━ ━ ━━ ━  ");
             Console.WriteLine("|--[o]---[o]--|     ㅅㅁ오 ㅈ ㅅㅉ : ㅂㅈ허 / ㅈㅇ : ㄷ저     ");
-            Console.WriteLine("|      ^      |   ┗   ━   ━━  ━ ━  ━ ━  ━ ━ ━ ━  ━  ━ ━  ━    ");
+            Console.WriteLine("|      ^    . |   ┗   ━   ━━  ━ ━  ━ ━  ━ ━ ━ ━  ━  ━ ━  ━    ");
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(200);
@@ -69,7 +69,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine(" ///////\\\\\\\\\\\\  ");
             Console.WriteLine("//           \\\\    ━━ ━ ━  ━  ━ ━━     ━ ━━━  ━  ━ ━ ━━ ━  ");
             Console.WriteLine("|--[o]---[o]--|     ㅅㅁ와 ㅈ 세ㅉ : 바ㅈ허 / ㅈㅇ : ㄷ적     ");
-            Console.WriteLine("|      ^      |   ┗   ━   ━━  ━━━  ━━━  ━━━ ━━━  ━━━━ ━  ━━┛   ");
+            Console.WriteLine("|      ^    . |   ┗   ━   ━━  ━━━  ━━━  ━━━ ━━━  ━━━━ ━  ━━┛   ");
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(200);
@@ -78,7 +78,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine(" ///////\\\\\\\\\\\\  ");
             Console.WriteLine("//           \\\\   ┏━━ ━━━  ━━━━ ━━  ━━━━ ━━━  ━━━━ ━━━━   ━┓");
             Console.WriteLine("|--[-]---[-]--|   ┃ ㅅㅁ왕 ㅈ 세ㅉ : 박ㅈ헌 / ㅈ업 : ㄷ적     ");
-            Console.WriteLine("|      ^      |   ┗  ━━ ━━━━  ━━━  ━━━  ━━━ ━━━  ━━━━ ━  ━━┛   ");
+            Console.WriteLine("|      ^    . |   ┗  ━━ ━━━━  ━━━  ━━━  ━━━ ━━━  ━━━━ ━  ━━┛   ");
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(200);
@@ -87,7 +87,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine(" ///////\\\\\\\\\\\\  ");
             Console.WriteLine("//           \\\\   ┏━━ ━━━━━━━━━ ━━━━━━━━ ━━━━━━━━━ ━━━━━━━━┓");
             Console.WriteLine("|--[o]---[o]--|   ┃ 삼ㅁ왕 ㅈ 셋ㅉ : 박ㅈ헌 / ㅈ업 : ㄷ적  ┃   ");
-            Console.WriteLine("|      ^      |   ┗━━━━ ━━━━━━━━━ ━━━━━━━━━ ━━━━━━━━ ━━━━━━┛   ");
+            Console.WriteLine("|      ^    . |   ┗━━━━ ━━━━━━━━━ ━━━━━━━━━ ━━━━━━━━ ━━━━━━┛   ");
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(200);
@@ -96,7 +96,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine(" ///////\\\\\\\\\\\\  ");
             Console.WriteLine("//           \\\\   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
             Console.WriteLine("|--[o]---[o]--|   ┃ 삼마왕 중 셋째 : 박준헌 / 직업 : 도적  ┃   ");
-            Console.WriteLine("|      ^      |   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛   ");
+            Console.WriteLine("|      ^    . |   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛   ");
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(1000);
@@ -117,18 +117,17 @@ namespace OOPConsoleProject.Scenes
             switch (input)
             {
                 case ConsoleKey.D1:
-                    Game.ChangeScene("JunheonsRoom");
+                    Game.ChangeScene("Talk_JH_1");
                     break;
                 case ConsoleKey.D2:
-                    Game.isCleared[2] = true;
-                    Game.ChangeScene("JunheonsRoom");
+                    Game.ChangeScene("Talk_JH_2");
                     break;
             }
         }
 
         public override void Result()
         {
-            //Game.ChangeScene("KyungilGameAcademymainhall");
+            //Game.ChangeScene("KyungilGameAcademymainhall"); //자동이동기능
         }
     }
 }

@@ -37,11 +37,6 @@ namespace OOPConsoleProject
                 curScene.Input();
                 curScene.Update();
                 curScene.Result();
-
-                if ((isCleared[0] == true) && (isCleared[1] == true) && (isCleared[2] == true))
-                {
-                    gameOver = true;
-                }
             }
 
             End(); // 마무리 작업
@@ -93,8 +88,12 @@ namespace OOPConsoleProject
             sceneDic.Add("Talk_JS_e", new Talk_JS_e());
             sceneDic.Add("Talk_JS_x", new Talk_JS_x());
             sceneDic.Add("Talk_JH", new Talk_JH()); //준헌과의 대화
+            sceneDic.Add("Talk_JH_1", new Talk_JH_1());
+            sceneDic.Add("Talk_JH_2", new Talk_JH_2());
+            sceneDic.Add("Talk_JH_2_1", new Talk_JH_2_1());
 
-            curScene = sceneDic["Talk_JS1"]; //첫 시작 타이틀
+
+            curScene = sceneDic["Talk_JH"]; //첫 시작 타이틀
 
 
         }
