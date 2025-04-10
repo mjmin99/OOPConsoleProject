@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOPConsoleProject.Scenes
+﻿namespace OOPConsoleProject.Scenes
 {
     class Talk_JS_e : BaseScene
     {
@@ -44,7 +38,17 @@ namespace OOPConsoleProject.Scenes
             Thread.Sleep(200);
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("탈출을 계속하려면 아무키나 눌러서 계속...");
+            Game.isCleared[1] = true; // 재성을 무찌름
+            if ((Game.isCleared[0] == true) && (Game.isCleared[1] == true) && (Game.isCleared[2] == true))
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("세 영혼석을 모두 모았다. 마음의 준비가 됐다면 아무키나 눌러서 계속");
+                Console.ResetColor();
+            }
+            else
+            {
+                Console.WriteLine("탈출을 계속하려면 아무키나 눌러서 계속...");
+            }
         }
 
         public override void Input()
@@ -54,19 +58,31 @@ namespace OOPConsoleProject.Scenes
 
         public override void Update()
         {
-            switch (input)
+            if ((Game.isCleared[0] == true) && (Game.isCleared[1] == true) && (Game.isCleared[2] == true))
             {
-                default:
-                    Game.isCleared[1] = true; // 재성을 무찌름
-                    Game.ChangeScene("Jaeseongsroom");
-                    break;
+                switch (input)
+                {
+                    default:
+                        
+                        Game.ChangeScene("End");
+                        break;
+                }
             }
-            
+            else
+            {
+                switch (input)
+                {
+                    default:
+                        Game.ChangeScene("Jaeseongsroom");
+                        break;
+                }
+            }
         }
 
         public override void Result()
         {
-            // Game.ChangeScene("Jaeseongsroom");
+
         }
     }
 }
+

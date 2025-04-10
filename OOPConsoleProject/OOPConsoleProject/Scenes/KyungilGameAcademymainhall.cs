@@ -47,13 +47,14 @@ namespace OOPConsoleProject.Scenes
             } 
 
             gameObjects = new List<GameObject>();
-            //gameObjects.Add(new Place("Jeongtaeksroom", 'O', new Vector2(49, 6))); 디버그용 정택 포탈 생성
-            //gameObjects.Add(new Place("Jaeseongsroom", 'O', new Vector2(55, 6))); 디버그용 재성 포탈 생성
-            //gameObjects.Add(new Place("JunheonsRoom", 'O', new Vector2(61, 6))); 디버그용 준헌 포탈 생성
+            gameObjects.Add(new Place("Jeongtaeksroom", 'O', new Vector2(49, 6))); //디버그용 정택 포탈 생성
+            gameObjects.Add(new Place("Jaeseongsroom", 'O', new Vector2(55, 6))); //디버그용 재성 포탈 생성
+            gameObjects.Add(new Place("JunheonsRoom", 'O', new Vector2(61, 6))); //디버그용 준헌 포탈 생성
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(29, 8)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(30, 8)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(36, 8)));
             gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(37, 8)));
+
             gameObjects.Add(new Note(new Vector2(32, 10))); //아이템
             
             gameObjects.Add(new Key2(new Vector2(17, 2))); //재성키 / 셋팅 끝

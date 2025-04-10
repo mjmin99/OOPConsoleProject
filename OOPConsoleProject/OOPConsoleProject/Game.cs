@@ -90,10 +90,10 @@ namespace OOPConsoleProject
             sceneDic.Add("Talk_JH", new Talk_JH()); //준헌과의 대화
             sceneDic.Add("Talk_JH_1", new Talk_JH_1());
             sceneDic.Add("Talk_JH_2", new Talk_JH_2());
-            sceneDic.Add("Talk_JH_2_1", new Talk_JH_2_1());
+            sceneDic.Add("End", new End());
 
 
-            curScene = sceneDic["Talk_JH"]; //첫 시작 타이틀
+            curScene = sceneDic["Talk_JT_e"]; //첫 시작 타이틀
 
 
         }
