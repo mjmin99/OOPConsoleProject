@@ -51,10 +51,13 @@ namespace OOPConsoleProject.Scenes
             //gameObjects.Add(new Place("Jaeseongsroom", 'O', new Vector2(55, 6))); 디버그용 재성 포탈 생성
             //gameObjects.Add(new Place("JunheonsRoom", 'O', new Vector2(61, 6))); 디버그용 준헌 포탈 생성
             //gameObjects.Add(new Place("KyungilGameAcademylobby", 'O', new Vector2(29, 8)));
+            gameObjects.Add(new Place("End_JT", 'T', new Vector2(32, 10)));
+            gameObjects.Add(new Place("End_JH", 'H', new Vector2(34, 10)));
+            gameObjects.Add(new Place("End1", 'O', new Vector2(33, 3)));
 
-            
 
-            
+
+
 
             //gameObjects.Add(new Note3(new Vector2(53, 15))); //준헌쪽지
             //<-새로운게 추가된다면 이 줄에 적어야함

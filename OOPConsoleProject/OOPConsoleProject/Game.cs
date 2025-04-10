@@ -19,7 +19,7 @@ namespace OOPConsoleProject
         private static Player player;
         public static Player Player { get { return player; } }
 
-        private static bool gameOver;
+        public static bool gameOver;
 
         public static bool[] isCleared = new bool[3];
 
@@ -91,6 +91,9 @@ namespace OOPConsoleProject
             sceneDic.Add("Talk_JH_1", new Talk_JH_1());
             sceneDic.Add("Talk_JH_2", new Talk_JH_2());
             sceneDic.Add("End", new End());
+            sceneDic.Add("End_JT", new End_JT());
+            sceneDic.Add("End_JH", new End_JH());
+            sceneDic.Add("End1", new End1());
 
 
             curScene = sceneDic["Talk_JT_e"]; //첫 시작 타이틀
