@@ -11,6 +11,7 @@ namespace OOPConsoleProject.Scenes
         private ConsoleKey input;
         public override void Render()
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Clear();
             Console.WriteLine("                                                 /____________________\\                                                 ");
             Console.WriteLine("                                                                                                                        ");
@@ -592,6 +593,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("                                                                                                                        ");
             Console.WriteLine("                                                                                                                        ");
             Console.WriteLine("                                                                                                                        ");
+            Thread.Sleep(1000);
             Console.WriteLine("                               제작자의 한 줄 소감을 들으려면 아무키나 눌러서 계속...                                   ");
             Console.WriteLine("                                                                                                                        ");
             Console.WriteLine("                                                                                                                        ");
@@ -600,6 +602,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("                                                                                                                        ");
             Console.WriteLine("                                                                                                                        ");
             Console.WriteLine("                                                                                                                        ");
+            Console.ResetColor();
 
 
 

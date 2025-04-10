@@ -30,7 +30,7 @@ namespace OOPConsoleProject.Scenes
                 Console.WriteLine("아 재성이는 방정리 중이라 못왔데");
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("못왔지만 막내를 보낸 정성이 느껴지면 아무키나 눌러서 계속...");
+                Console.WriteLine("못왔지만 막내를 보낸 재성의 정성이 느껴지면 아무키나 눌러서 계속...");
                 Console.ResetColor();
             }
             else
@@ -48,9 +48,8 @@ namespace OOPConsoleProject.Scenes
                 Console.WriteLine();
                 Console.WriteLine("이 경일게임아카데미를!\" .... 이라고 재성이가 전해달래");
                 Console.WriteLine();
-                Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("역시나 못왔지만 막내를 시킨 정성이 느껴지면 아무키나 눌러서 계속...");
+                Console.WriteLine("역시나 못왔지만 막내를 시킨 재성의 정성이 느껴지면 아무키나 눌러서 계속...");
                 Console.ResetColor();
             }
         }

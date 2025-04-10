@@ -1,4 +1,5 @@
-﻿using OOPConsoleProject.GameObjects;
+﻿using System.Security.AccessControl;
+using OOPConsoleProject.GameObjects;
 
 namespace OOPConsoleProject
 {
@@ -53,9 +54,11 @@ namespace OOPConsoleProject
         private void Menu()
         {
             PrintALLAtInventory();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("1. 사용하기");
             Console.WriteLine("2. 살펴보기");
             Console.WriteLine("0. 뒤로가기");
+            Console.ResetColor();
 
             ConsoleKey input = Console.ReadKey(true).Key;
             switch (input)
@@ -75,8 +78,10 @@ namespace OOPConsoleProject
         private void UseMenu()
         {
             PrintALLAtInventory();
-            Console.WriteLine("사용할 아이템을 선택해주세요");
-            Console.WriteLine("뒤로가기는 0");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("사용할 아이템의 번호를 입력해주세요");
+            Console.WriteLine("0. 뒤로가기");
+            Console.ResetColor();
             ConsoleKey input = Console.ReadKey(true).Key;
             if (input == ConsoleKey.D0)
             {
@@ -109,13 +114,15 @@ namespace OOPConsoleProject
             }
             else if (selectItem.isKey == false)
             {
-                Console.WriteLine("쪽지는 사용할 수 없다! (귀여워~ 쪽!)");
+                Console.WriteLine("쪽지는 사용할 수 없다! (귀여워~ 쪽! ... 볼에 침이 묻었다... 힘이 쪽 빠졌다...)");
                 Thread.Sleep(2000);
                 stack.Pop();
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("{0} 을/를 사용하시겠습니까? (y/n)", selectItem.name);
+                Console.ResetColor();
 
                 ConsoleKey input = Console.ReadKey(true).Key;
                 switch (input)
@@ -137,8 +144,11 @@ namespace OOPConsoleProject
         private void InfoMenu()
         {
             PrintALLAtInventory();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("살펴볼 아이템을 선택해주세요");
-            Console.WriteLine("뒤로가기는 0");
+            Console.ResetColor();
+            Console.WriteLine("0. 뒤로가기");
+            Console.ResetColor();
             ConsoleKey input = Console.ReadKey(true).Key;
             if (input == ConsoleKey.D0)
             {
@@ -150,6 +160,7 @@ namespace OOPConsoleProject
                 if (select < 0 || items.Count <= select)
                 {
                     Console.WriteLine("범위 내의 아이템을 선택하세요.");
+                    Thread.Sleep(1000);
                 }
                 else
                 {
@@ -162,11 +173,19 @@ namespace OOPConsoleProject
         private void InfoConfirm()
         {
             Item selectItem = items[selectIndex];
-            Console.WriteLine($"아이템 이름 : \n\n{selectItem.name}");
+            Console.Write($"아이템 이름 :");
+          
+            Console.Write($" \"{selectItem.name}\"");
+            
+            
             Console.WriteLine();
-            Console.WriteLine($"아이템 설명 : \n\n{selectItem.description}");
+            Console.WriteLine($"아이템 설명 : ");
+            Console.Write($"\n\n{selectItem.description}");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine();
             Console.WriteLine("0. 뒤로가기");
+            Console.ResetColor();
 
             ConsoleKey input = Console.ReadKey(true).Key;
             switch (input)

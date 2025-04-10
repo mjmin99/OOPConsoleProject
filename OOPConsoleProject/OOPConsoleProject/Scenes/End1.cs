@@ -68,8 +68,7 @@ namespace OOPConsoleProject.Scenes
             switch (input)
             {
                 default:
-                    Game.gameOver = true;
-                    Game.ChangeScene("Talk_JH_2");
+                    Game.ChangeScene("End2");
                     break;
             }
         }

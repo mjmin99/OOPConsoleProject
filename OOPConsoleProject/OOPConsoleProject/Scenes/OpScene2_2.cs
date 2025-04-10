@@ -31,8 +31,8 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("  \\                      /           ");
             Console.WriteLine("           \\      /                  ");
             Console.WriteLine("      \\                /             ");
-            Console.WriteLine("　　\\　  형식상 설명    　/          ");
-            Console.WriteLine("-　-　　 은 생략하죠   　-　-　-      ");
+            Console.WriteLine("　　\\　 형식상의 설명   　/          ");
+            Console.WriteLine("-　-　　  은 생략하죠  　-　-　-      ");
             Console.WriteLine("　　/　    (이상한) 　 　\\           ");
             Console.WriteLine("  /    / (녀석이네..)  .              ");
             Console.WriteLine("    /                \\               ");
@@ -60,7 +60,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("           \\      /                  ");
             Console.WriteLine("      \\                /             ");
             Console.WriteLine("　　\\　　    모든       　/          ");
-            Console.WriteLine("-　-　  마왕이 쓰러지면　-　-　-      ");
+            Console.WriteLine("-　-　 마왕이 쓰러지면　 -　-　-      ");
             Console.WriteLine("　　/그 뒤 부턴 자연스레 \\           ");
             Console.WriteLine("  /    /알게 될 겁니다 .              ");
             Console.WriteLine("    /                \\               ");

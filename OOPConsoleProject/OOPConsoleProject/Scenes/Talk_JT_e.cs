@@ -25,6 +25,7 @@
             Console.WriteLine("|    \\___/    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine("너무 훌륭하게 잘해주었다.");
             Console.WriteLine();
             Thread.Sleep(1000);
@@ -53,8 +54,6 @@
             Console.WriteLine();
             Console.WriteLine();
             Game.isCleared[0] = true; // 정택을 무찌름
-            Game.isCleared[1] = true; // 정택을 무찌름
-            Game.isCleared[2] = true; // 정택을 무찌름
             if ((Game.isCleared[0] == true) && (Game.isCleared[1] == true) && (Game.isCleared[2] == true))
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;

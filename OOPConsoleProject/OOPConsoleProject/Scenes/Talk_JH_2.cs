@@ -19,6 +19,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine("이 경일아카에서 무찌른다는 건 결국 스승을 뛰어넘어 밖으로 나간다는 것...");
             Thread.Sleep(1000);
             Console.WriteLine();
@@ -33,6 +34,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("박준헌의 테스트를 통과했다. 경일게임아카데미 탈출이 더 가까워진 것 같다.");
+            Console.WriteLine();
             Thread.Sleep(1000);
             Console.WriteLine("스텟이 올랐다. [헤쳐나갈 용기 +1]");
             Thread.Sleep(1000);

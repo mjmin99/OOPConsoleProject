@@ -16,9 +16,9 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("  \\                      /           ");
             Console.WriteLine("           \\      /                  ");
             Console.WriteLine("      \\                /             ");
-            Console.WriteLine("　　\\　　   새장 속     　/          ");
-            Console.WriteLine("-　-　　 　새로 살 순  　-　-　-      ");
-            Console.WriteLine("　　/　     없습니다.　　\\           ");
+            Console.WriteLine("　　\\　　  새장 속      　/          ");
+            Console.WriteLine("-　-　　　새로 살 순   　-　-　-      ");
+            Console.WriteLine("　　/　    없습니다.　 　\\           ");
             Console.WriteLine("  /    /               .              ");
             Console.WriteLine("    /                \\               ");
             Console.WriteLine("          /  |                        ");
@@ -31,9 +31,9 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("           \\      /                  ");
             Console.WriteLine("      \\                /             ");
             Console.WriteLine("　　\\　　   진정한      　/          ");
-            Console.WriteLine("-　-　　 　자유의지를  　-　-　-      ");
-            Console.WriteLine("　　/　       위해...　　\\           ");
-            Console.WriteLine("  /    /   싸우십시오  .              ");
+            Console.WriteLine("-　-　　  자유의지를  　-　-　-      ");
+            Console.WriteLine("　　/　     위해...　  　\\           ");
+            Console.WriteLine("  /    /  싸우십시오   .              ");
             Console.WriteLine("    /                \\               ");
             Console.WriteLine("          /  |                        ");
             Console.WriteLine("              .                       ");
@@ -59,7 +59,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("           \\      /                  ");
             Console.WriteLine("      \\                /             ");
             Console.WriteLine("　　\\　　    모든       　/          ");
-            Console.WriteLine("-　-　  마왕이 쓰러지면　-　-　-      ");
+            Console.WriteLine("-　-　 마왕이 쓰러지면 　-　-　-      ");
             Console.WriteLine("　　/그 뒤 부턴 자연스레 \\           ");
             Console.WriteLine("  /    /알게 될 겁니다 .              ");
             Console.WriteLine("    /                \\               ");

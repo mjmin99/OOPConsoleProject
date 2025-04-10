@@ -31,8 +31,12 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("|    \\___/    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine("그렇다면 두 번째 문제");
+            Console.WriteLine();
+            Thread.Sleep(1000);
             Console.WriteLine("다음 중 델리게이트에 대한 설명 중 옳지 않은 것을 고르시오.");
+            Thread.Sleep(1000);
             Console.WriteLine();
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Yellow;

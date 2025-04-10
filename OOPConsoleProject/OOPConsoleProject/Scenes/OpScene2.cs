@@ -18,7 +18,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("           \\      /                  ");
             Console.WriteLine("      \\                /             ");
             Console.WriteLine("　　\\　　   저는...     　/          ");
-            Console.WriteLine("-　-　　　당신의 내면　　-　-　-      ");
+            Console.WriteLine("-　-　　 당신의 내면　 　-　-　-      ");
             Console.WriteLine("　　/　    속 존재...　　\\           ");
             Console.WriteLine("  /    /               .              ");
             Console.WriteLine("    /                \\               ");
@@ -59,7 +59,7 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("  \\                      /           ");
             Console.WriteLine("           \\      /                  ");
             Console.WriteLine("      \\                /             ");
-            Console.WriteLine("　　\\　탈출하십시오...  　/          ");
+            Console.WriteLine("　　\\　 탈출하십시오... 　/          ");
             Console.WriteLine("-　- 당신은 이곳에 있을  -　-　-      ");
             Console.WriteLine("　　/　사람이 아닙니다.　\\           ");
             Console.WriteLine("  /    /    그럼...    .              ");

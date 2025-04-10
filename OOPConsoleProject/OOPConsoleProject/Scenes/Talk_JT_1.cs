@@ -49,7 +49,9 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine();
             Console.WriteLine("야레야레.. 쇼가나이나~, 귀엽다니깐 학생쟝은...");
             Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine("길을 잘못들었구나.");
+            Console.WriteLine();
             Thread.Sleep(1000);
             Console.WriteLine("어서 자리로 돌아가고↗ 출석↗확인해주라~");
             Thread.Sleep(1000);

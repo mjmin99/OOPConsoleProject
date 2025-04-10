@@ -31,9 +31,13 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("|    \\___/    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine("그렇다면 세 번째 문제");
+            Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine("다음 설명 중 옳지 않은 것을 고르시오");
             Console.WriteLine();
+            Thread.Sleep(1000);
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("1. 이벤트 - 이벤트를 선언하지 않은 외부 객체에서 참조해 참조한 메서드를 호출할 수 있다");

@@ -19,8 +19,12 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine("이번엔 어물쩡 넘어가주지만");
+            Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine("다음부턴 이렇게 쉽게 보내줄 생각은 없다는 것만 알아두도록 해");
+            Thread.Sleep(1000);
             Console.WriteLine();
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Yellow;

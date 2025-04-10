@@ -18,18 +18,20 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("|      ^      |");
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
-            Thread.Sleep(200);
+            Console.WriteLine();
             Thread.Sleep(1000);
             Console.WriteLine("이게 뭐하는 짓이지?");
-            Thread.Sleep(200);
+            Console.WriteLine();
+            Thread.Sleep(1000);
             Console.WriteLine("하나도 알 수가 없군...");
-            Thread.Sleep(200);
+            Console.WriteLine();
+            Thread.Sleep(1000);
             Console.WriteLine("뭐가됐든 TIL 은 꼭 작성할 수 있도록 하자");
-            Thread.Sleep(200);
+            Thread.Sleep(1000);
             Console.WriteLine();
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("TIL 작성하고 계속하고 싶으면 아무키나 눌러서 계속...");
+            Console.WriteLine("TIL을 작성하고 계속하고 싶으면 아무키나 눌러서 계속...");
             Console.ResetColor();
        
         }

@@ -19,12 +19,17 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine("그렇구나 괜찮아. 혹시 무슨 고민이 있다면");
+            Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine("편하게 말해보렴 난 그러라고 있는 사람인걸");
             Console.WriteLine();
             Console.WriteLine();
             Thread.Sleep(1000);
             Console.WriteLine("(다른 마왕들에게서 느껴보지 못한 따뜻함...)");
+            Console.WriteLine();
+            Thread.Sleep(1000);
             Console.WriteLine("(나는 이런 마왕들을 무찔러야 하는가..)");
             Console.WriteLine();
             Console.WriteLine();

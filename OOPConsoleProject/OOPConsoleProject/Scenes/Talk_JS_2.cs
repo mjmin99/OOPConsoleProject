@@ -19,11 +19,13 @@ namespace OOPConsoleProject.Scenes
             Console.WriteLine("|    [___]    | ");
             Console.WriteLine(" \\___________/ ");
             Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine("좋아 어디 내가 내는 문제를.....");
             Console.WriteLine();
             Thread.Sleep(1000);
             Console.WriteLine("(으윽... 쪽지도 문제였는데 이런식으로 나오기야..? 독하다 독해!)");
             Thread.Sleep(1000);
+            Console.WriteLine();
             Console.WriteLine("(뭔가 방법을 떠올려야해... 이 문제 지옥을 벗어날 방법을...)");
             Thread.Sleep(1000);
             Console.WriteLine();
