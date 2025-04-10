@@ -18,9 +18,11 @@ namespace OOPConsoleProject.Scenes
 
             Console.WriteLine();
             //Util.Print("X스를 한번도 못해본 사람은", ConsoleColor.Gray, 733);
-            Util.PrintNoLine("X스를", ConsoleColor.Gray, 433);
-            Util.PrintNoLine(" 한번도", ConsoleColor.Gray, 433);
-            Util.PrintNoLine(" 못해본", ConsoleColor.Gray, 433);
+            Util.PrintNoLine("현실에서", ConsoleColor.Gray, 433);
+            Util.PrintNoLine(" 어떠한", ConsoleColor.Gray, 433);
+            Util.PrintNoLine(" 경험을", ConsoleColor.Gray, 433);
+            Util.PrintNoLine(" 해보지", ConsoleColor.Gray, 433);
+            Util.PrintNoLine(" 않은", ConsoleColor.Gray, 433);
             Util.PrintNoLine(" 사람은", ConsoleColor.Gray, 433);
             Console.WriteLine();
             Console.WriteLine();
@@ -31,7 +33,7 @@ namespace OOPConsoleProject.Scenes
             //Util.Print("때문에 꿈에서조차 X스를 하지 못한다는 이야기가 있다...", ConsoleColor.Gray, 733);
             Util.PrintNoLine("때문에", ConsoleColor.Gray, 433);
             Util.PrintNoLine(" 꿈에서조차", ConsoleColor.Gray, 433);
-            Util.PrintNoLine(" X스를", ConsoleColor.Gray, 433);
+            Util.PrintNoLine(" 경험을", ConsoleColor.Gray, 433);
             Util.PrintNoLine(" 하지", ConsoleColor.Gray, 433);
             Util.PrintNoLine(" 못한다는", ConsoleColor.Gray, 433);
             Util.PrintNoLine(" 이야기가", ConsoleColor.Gray, 433);
